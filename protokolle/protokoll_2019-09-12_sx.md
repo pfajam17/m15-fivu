@@ -95,9 +95,9 @@ Wir werden im Rahmen von FIVU Web-Apps auf Basis **Angular** und Web-Server auf 
 
 ### Node.js
 
-Web-Seite von Node.js: [https://nodejs.org](nodejs)
+Web-Seite von Node.js: [https://nodejs.org][nodejs]
 
-Aus [Wikipedia](wiki-node-js):  
+Aus [Wikipedia][wiki-node-js]:  
 >Node.js ist eine serverseitige Plattform in der Softwareentwicklung zum Betrieb von Netzwerkanwendungen. Insbesondere lassen sich Webserver damit realisieren. Node.js wird in der JavaScript-Laufzeitumgebung „V8“ ausgeführt, die ursprünglich für Google Chrome entwickelt wurde, und bietet eine ressourcensparende Architektur, die eine besonders große Anzahl gleichzeitig bestehender Netzwerkverbindungen ermöglicht.
 
 Node.js ermöglicht daher die Ausführung von Javascript Programmen auf einem Rechner.
@@ -106,15 +106,15 @@ Node.js ist Freeware und Open Source und steht unter der MIT Lizenz. Node.js wir
 
 Mit Hilfe des Tools `npm`, dem Paketmanager für Node.js (Backronym für *Node Package Manager*) können externe Module von einem Open Source Repository heruntergeladen und installiert werden. Derzeit (Sept. 2019) sind bereits mehr als 1 Million Module verfügbar.
 
-Versionen: siehe [https://nodejs.org/en/about/releases/](nodejs-releases)  
+Versionen: siehe [https://nodejs.org/en/about/releases/][nodejs-releases]  
 Wir arbeiten dieses Jahr mit der LTS (Long Term Support) Version 10.x.x.
 
 
 ### Angular
 
-Web-Seite von Angular: [https://angular.io/](angular)
+Web-Seite von Angular: [https://angular.io/][angular]
 
-Aus [Wikipedia](wiki-angular):  
+Aus [Wikipedia][wiki-angular]:  
 >Angular (zur Abgrenzung vom Vorgänger AngularJS (Version 1.x)) auch „Angular 2+“ ist ein TypeScript-basiertes Front-End-Webapplikationsframework. Es wird von einer Community aus Einzelpersonen und Unternehmen, angeführt durch Google, entwickelt und als Open-Source-Software publiziert.
 
 Angular ermöglicht die Erstellung von Web-Applikationen, die dann zum Beispiel im Web-Browser auf jedem Endgerät verwendet werden können.
@@ -123,7 +123,7 @@ Angular ist Freeware und Open Source und steht unter der MIT Lizenz. Die Sprache
 
 ### Angular CLI
 
-Web-Seite von Angular CLI: [https://cli.angular.io/](angular-cli)
+Web-Seite von Angular CLI: [https://cli.angular.io/][angular-cli]
 
 Angular CLI ist ein *command line interface* für Angular. Mit ihm können Angular Projekt leicht und effizient erstellt und entwickelt werden.
 
@@ -139,7 +139,7 @@ ng serve
 
 ### Visual Studio Code
 
-Web-Seite von Visual Studio Code: [https://code.visualstudio.com/](vscode)
+Web-Seite von Visual Studio Code: [https://code.visualstudio.com/][vscode]
 
 **Visual Studio Code** (kurz *VSCode* oder *code*) ist eine Entwicklungsumgebung (IDE) für Javascript/Typescript Programme.
 
@@ -156,7 +156,7 @@ Die Installation auf einem Linux/Ubuntu System:
 
 1. **Node.js**  
    Node.js sollte über den Paketmanager installiert werden.  
-   Siehe [https://github.com/nodesource/distributions/blob/master/README.md](nodjs-via-apt)
+   Siehe [https://github.com/nodesource/distributions/blob/master/README.md][nodjs-via-apt]
    ```bash
    sudo apt update
    sudo apt install curl
