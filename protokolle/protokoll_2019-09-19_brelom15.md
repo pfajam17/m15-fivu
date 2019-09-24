@@ -11,12 +11,17 @@
 
 ## Inhaltsverzeichnis
 
-1. [Mobile Computing](#mobile-computing)  
-2.
+1. [Installation von Visual Studio Code](#Installation-von-Visual-Studio-Code)  
+2. [Analyse eines Angular Projects](#Analyse-eines-Angular-Projects  )
+3. [Aufbau einer Webseite](#Aufbau-einer-Webseite)
+    1. [HTML](#HTML)
+    2. [CSS](#CSS)
+    3. [Java / TypeScript](#Java-/-TypeScript)
+4. [Bearbeitung des Projects](#Bearbeitung-des-Projects)
 
 ----------------------------------------------------------------------------------------------
 
-## Installation von Visual Studio Code
+## Installation von Visual Studio Code  
 
 Visual Studio Code ist ein Quelltext-Editor von Microsoft welcher mit Hilfe der Extension
 TSLint zur Programierung von TypeScript genutzt werden kann. Vorteil dieser IDE ist, dass sie auf jedem
@@ -34,7 +39,7 @@ kompatiebel zu halten, da diese im Wochentackt aktuallisiert werden. Besagte Dat
 
 *index.html:* Beinhaltet den grundlegenden Aufbau der Websteite. Allerdings wird hierbei nur auf die Angular Application
 (app-root) verwiesen.
-```
+```html
 <body>
   <app-root></app-root>
 </body>
@@ -54,10 +59,10 @@ Eine Webseite besteht grundlegend aus drei Komponenten. Einer HTML, einer CSS un
  HTML (Hypertext Markup Language) ist Auszeichnungssprache mit welcher die Grundlegende Struktur einer Webseite deffiniert wird.
  Mit solch einem Quellcode lassen sich Elemente wie Texte, Überschriften und Bilder mittels sogennanten Tags über den Browser
  in einer simplen Struktur Darstellen. Tags werden mittels "< ... >" gekennzeichnet, bobei es ein Start und ein Endtag gibt.
- Der zwischen den Tags stehende kontnennt wird je nach art nun ander dargestellt bzw.: definiert.  
+ Der zwischen den Tags stehende Kontent wird je nach Art nun anders dargestellt bzw.: definiert.  
 
  Syntax Beispiel:
- ```
+ ```HTML
  <!DOCTYPE html>
 <html>
   <head>
@@ -89,11 +94,59 @@ Komponente X {
 
 ### Java / TypeScript
 
-Java / TypeScript ist eien Skriptsprache welche genutzt wird um Inhalte zu verändern, nachzuladen oder zu generieren und so die Möglichkeiten von HTML und CSS zu erweitern. Hierbei ist allerdings zu beachten, dass JavaScript nict viel mit dem Echten Java zu tun hat. Dienahmensgebung ist ein reiner Markezing Akt gewesen.
-
-
-
+Java / TypeScript ist eien Skriptsprache welche genutzt wird um Inhalte zu verändern, nachzuladen oder zu generieren und so die
+Möglichkeiten von HTML und CSS zu erweitern. Hierbei ist allerdings zu beachten, dass JavaScript nict viel mit dem Echten Java
+zu tun hat. Dienahmensgebung ist ein reiner Markezing Akt gewesen.
 
 
 
 ## Bearbeitung des Projects
+
+Als erstes sollte eine einfache Begrüßung unter einer Überschrift auf der Startseite dargestekllt werden.
+Hierführ muss als erses eine Variable erstellt erden um sie anschließend darzustellen.  
+
+```TypeScript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+
+export class AppComponent {
+  public myWelcome = 'Hello';
+  }
+}
+```
+Um diese anschließend auf der Seite zu zeigen muss sie noch in der html Datei bekannt gegeben werden.
+
+```HTML
+<h1>My First project with Angular</h1>
+{{myWelcome}}
+```
+
+Anschließend sollte nach der Begrüßung eine Zahl nach oben gezählt werden. Dies wird mit Hilfe eines Konstruktors und der Methode setInterval realiesier. Dies ist möglich das sich die Application automatisch aktuallisiert.  
+
+```TypeScript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  public myWelcome = 'Hello';
+  private cnt = 0;
+
+  public constructor() {
+    this.myWelcome = 'Hello2';
+
+    setInterval( () => {
+      this.cnt++;
+      this.myWelcome = 'Hello ' + this.cnt;
+    }, 1000);
+  }
+}
+```
