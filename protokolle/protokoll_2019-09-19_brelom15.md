@@ -1,6 +1,6 @@
-# Protokoll FIVU/SX 5AHME (2019/20)
+# Protokoll FIVU/brelom15 5AHME (2019/20)
 
-* **Thema:** Installation Node.js, Angular, Angular CLI
+* **Thema:** Installation VS Code, Erstes Project  
 * **Datum:** 19.9.2019
 * **Gefehlt:** -
 * **Erstellt von:** Breitenthaler
