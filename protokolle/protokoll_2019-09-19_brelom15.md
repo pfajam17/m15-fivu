@@ -4,7 +4,7 @@
 * **Datum:** 19.9.2019
 * **Gefehlt:** -
 * **Erstellt von:** Breitenthaler
-* **Protokoll letzte Einheit:** [hir](protokoll_2019_09_12_sx.md)
+* **Protokoll letzte Einheit:** [hier](protokoll_2019-09-12_sx.md)
 * **Protokoll nächste Einheit**
 
 ----------------------------------------------------------------------------------------------
@@ -35,6 +35,8 @@ Ein von der Angular CLI erstelltes Projekt besteht grundsätzlich aus sehr viele
 verwendeten Module direkt im Projekt Ordner abgelegt sind. Dies ist erforderlich um die Module immer miteinander
 kompatiebel zu halten, da diese im Wochentackt aktuallisiert werden. Besagte Dateien sind im **node_modules** Ordner abgelegt.
 
+**Analyse weiterer Dateien:**
+
 *package.json:* Beinhaltet die Information welche Versionen der einzelnen Module vorhanden ist.
 
 *index.html:* Beinhaltet den grundlegenden Aufbau der Websteite. Allerdings wird hierbei nur auf die Angular Application
@@ -52,14 +54,12 @@ Die eigentliche Programmierarbeit wird im Verzeichniss `src/app` in den Dateien 
 
 ## Aufbau einer Webseite
 
-Eine Webseite besteht grundlegend aus drei Komponenten. Einer HTML, einer CSS und einer Java / Typescript Komponente, welche alle einen individuellen Aufgabenbereich haben.  
+Eine Webseite besteht grundlegend aus drei Komponenten. Einer HTML, einer CSS und einer Java / Typescript Komponente, welche alle einen individuellen Aufgabenbereich erfüllen.  
 
 ### HTML
 
- HTML (Hypertext Markup Language) ist Auszeichnungssprache mit welcher die Grundlegende Struktur einer Webseite deffiniert wird.
- Mit solch einem Quellcode lassen sich Elemente wie Texte, Überschriften und Bilder mittels sogennanten Tags über den Browser
- in einer simplen Struktur Darstellen. Tags werden mittels "< ... >" gekennzeichnet, bobei es ein Start und ein Endtag gibt.
- Der zwischen den Tags stehende Kontent wird je nach Art nun anders dargestellt bzw.: definiert.  
+ HTML (Hypertext Markup Language) ist eine Auszeichnungssprache mit welcher die Grundlegende Struktur einer Webseite deffiniert wird.
+Mit solch einem Quellcode lassen sich Elemente wie Texte, Überschriften und Bilder mittels sogennanten Tags über den Browser in einer simplen Struktur Darstellen. Tags werden mittels "< ... >" gekennzeichnet, bobei es ein Start und ein Endtag gibt. Der zwischen den Tags stehende Kontent wird je nach Art nun anders dargestellt bzw.: definiert.  
 
  Syntax Beispiel:
  ```HTML
@@ -78,12 +78,11 @@ Eine Webseite besteht grundlegend aus drei Komponenten. Einer HTML, einer CSS un
 
 ### CSS
 
-CSS (Cascading Style Sheets) ist eine Syle Sheet Sprache welche benutzt wird um dem Rohen HTML Kontent "Farbe" zu verleihen.
-Somit kann man nun gewissen HTML Elementen eine Gewisse Schriftart, Farbe oder Form zuteilen.  
-Hierbei besteht eine solche Datei nur aus Anweisungen welche HTML Komponente wie auszusehen hat.  
+CSS (Cascading Style Sheets) ist eine Syle Sheet Sprache, welche benutzt wird um dem Rohen HTML Kontent "Farbe" zu verleihen.
+Somit kann man nun gewissen HTML Elementen eine Gewisse Schriftart, Farbe oder Form zuteilen. Hierbei besteht eine solche Datei nur aus Anweisungen, welche HTML Komponente wie auszusehen hat.  
 
 Anweisungs Beispiel:
-```
+```CSS
 Komponente X {
   Eigenschaft 1;
   ...
@@ -94,16 +93,13 @@ Komponente X {
 
 ### Java / TypeScript
 
-Java / TypeScript ist eien Skriptsprache welche genutzt wird um Inhalte zu verändern, nachzuladen oder zu generieren und so die
-Möglichkeiten von HTML und CSS zu erweitern. Hierbei ist allerdings zu beachten, dass JavaScript nict viel mit dem Echten Java
-zu tun hat. Dienahmensgebung ist ein reiner Markezing Akt gewesen.
-
+Java / TypeScript ist eien Skriptsprache welche genutzt wird um Inhalte zu verändern, nachzuladen oder zu generieren und so die Möglichkeiten von HTML und CSS zu erweitern. Hierbei ist allerdings zu beachten, dass JavaScript nict viel mit dem Echten Java zu tun hat. Die Nahmensgebung ist ein reiner Marketing Akt gewesen.
 
 
 ## Bearbeitung des Projects
 
-Als erstes sollte eine einfache Begrüßung unter einer Überschrift auf der Startseite dargestekllt werden.
-Hierführ muss als erses eine Variable erstellt erden um sie anschließend darzustellen.  
+1. Als erstes sollte eine einfache Begrüßung unter einer Überschrift auf der Startseite dargestekllt werden.
+Hierführ müssen Statische Elemente wie die Überschrift im HTML Code und Dynamische Elemente wie unsere Begrüßung in einer Variable im TypeScript Code angeführt werden.  
 
 ```TypeScript
 import { Component } from '@angular/core';
@@ -119,23 +115,18 @@ export class AppComponent {
   }
 }
 ```
-Um diese anschließend auf der Seite zu zeigen muss sie noch in der html Datei bekannt gegeben werden.
+Um diese anschließend auf der Seite zu zeigen muss sie noch in der HTML Datei bekannt gegeben werden.
 
 ```HTML
 <h1>My First project with Angular</h1>
 {{myWelcome}}
 ```
 
-Anschließend sollte nach der Begrüßung eine Zahl nach oben gezählt werden. Dies wird mit Hilfe eines Konstruktors und der Methode setInterval realiesier. Dies ist möglich das sich die Application automatisch aktuallisiert.  
+
+
+2. Anschließend sollte nach der Begrüßung eine Zahl nach oben gezählt werden. Dies wird mit Hilfe eines Konstruktors und der Methode setInterval realiesier. Dies ist möglich das sich die Application automatisch aktuallisiert.  
 
 ```TypeScript
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
 export class AppComponent {
   public myWelcome = 'Hello';
   private cnt = 0;
