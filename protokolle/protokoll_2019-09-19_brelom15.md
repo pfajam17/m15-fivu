@@ -59,7 +59,7 @@ Eine Webseite besteht grundlegend aus drei Komponenten. Einer HTML, einer CSS un
 ### HTML
 
  HTML (Hypertext Markup Language) ist eine Auszeichnungssprache mit welcher die Grundlegende Struktur einer Webseite deffiniert wird.
-Mit solch einem Quellcode lassen sich Elemente wie Texte, Überschriften und Bilder mittels sogennanten Tags über den Browser in einer simplen Struktur Darstellen. Tags werden mittels "< ... >" gekennzeichnet, bobei es ein Start und ein Endtag gibt. Der zwischen den Tags stehende Kontent wird je nach Art nun anders dargestellt bzw.: definiert.  
+Mit solch einem Quellcode lassen sich Elemente wie Texte, Überschriften und Bilder mittels sogennanten Tags über den Browser in einer simplen Struktur darstellen. Tags werden mittels "< ... >" gekennzeichnet, bobei es ein Start und ein Endtag gibt. Der zwischen den Tags stehende Kontent wird je nach Art nun anders dargestellt bzw.: definiert.  
 
  Syntax Beispiel:
  ```HTML
@@ -78,8 +78,8 @@ Mit solch einem Quellcode lassen sich Elemente wie Texte, Überschriften und Bil
 
 ### CSS
 
-CSS (Cascading Style Sheets) ist eine Syle Sheet Sprache, welche benutzt wird um dem Rohen HTML Kontent "Farbe" zu verleihen.
-Somit kann man nun gewissen HTML Elementen eine Gewisse Schriftart, Farbe oder Form zuteilen. Hierbei besteht eine solche Datei nur aus Anweisungen, welche HTML Komponente wie auszusehen hat.  
+CSS (Cascading Style Sheets) ist eine Syle Sheet Sprache, welche benutzt wird um dem rohen HTML Kontent "Farbe" zu verleihen.
+Somit kann man nun gewissen HTML Elementen eine gewisse Schriftart, Farbe oder Form zuteilen. Hierbei besteht eine solche Datei nur aus Anweisungen, welche HTML Komponente wie auszusehen hat.  
 
 Anweisungs Beispiel:
 ```CSS
@@ -93,7 +93,7 @@ Komponente X {
 
 ### Java / TypeScript
 
-Java / TypeScript ist eien Skriptsprache welche genutzt wird um Inhalte zu verändern, nachzuladen oder zu generieren und so die Möglichkeiten von HTML und CSS zu erweitern. Hierbei ist allerdings zu beachten, dass JavaScript nict viel mit dem Echten Java zu tun hat. Die Nahmensgebung ist ein reiner Marketing Akt gewesen.
+Java / TypeScript ist eien Skriptsprache welche genutzt wird um Inhalte zu verändern, nachzuladen oder zu generieren und so die Möglichkeiten von HTML und CSS zu erweitern. Hierbei ist allerdings zu beachten, dass JavaScript nict viel mit dem echten Java zu tun hat. Die Nahmensgebung ist ein reiner Marketing Akt gewesen.
 
 
 ## Bearbeitung des Projects
