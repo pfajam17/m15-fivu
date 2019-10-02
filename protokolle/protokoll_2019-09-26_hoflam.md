@@ -12,10 +12,10 @@
 ## Inhaltsverzeichnis
 
 1. [HTML](#HTML)
-    1. [Was ist HTML?](#Was-ist-HTML-?)
+    1. [Was ist HTML?](#was-ist-HTML)
     2. [HTML Basics](#HTML-Basics)
 2. [CSS](#CSS)
-    1. [Was ist CSS?](#Was-ist-CSS-?)
+    1. [Was ist CSS?](#was-ist-CSS)
     2. [CSS Basics](#CSS-Basics)
 3. [TypeScript](#TypeScript)
     1. [Einführung in TypesScript](#Einführung-in-TypeScript)
