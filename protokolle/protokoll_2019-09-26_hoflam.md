@@ -88,10 +88,12 @@ In dem Tuturial auf der Seite [w3schools - HTML](https://www.w3schools.com/html/
 -   ```<ol>``` → geordnete Liste/nummerierte Liste
     
     -   ```<li>```  → Listenelement
+    
 
 **Beispiel: my-first-ng-app**
 
 *Überschrift:*
+
 ```<h1  style="color:blueviolet">My First project with Angular</h1>```
 
 *Button:* 
@@ -102,6 +104,7 @@ Mit```<button>``` wird ein Button erstellt. Damit er funktioniert braucht man ei
 ``` 
 
 *Paragraph:*
+
 ```
 <p id="mycomponent">
 {{myWelcome}}
@@ -113,6 +116,7 @@ das soll ein text sein
 ```
 
 *geordnete Liste (ol = ordered list):*
+
 ```
 <ol>
 
@@ -124,6 +128,7 @@ das soll ein text sein
 ```
 
  *ungeordnete Liste (ul = unordered list):*
+ 
  ```
 <ul  class ="myClass">
 
@@ -134,11 +139,13 @@ das soll ein text sein
 ```
 
  *Link:*  
+ 
 ```
 <a  target="_blank"  href="https://www.google.at/">Google Link</a>
 ```
 
 *Bild:*
+
 ```
 <img  src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
 ```
