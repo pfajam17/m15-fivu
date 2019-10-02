@@ -97,7 +97,7 @@ In dem Tuturial auf der Seite [w3schools - HTML](https://www.w3schools.com/html/
 ```<h1  style="color:blueviolet">My First project with Angular</h1>```
 
 *Button:* 
-Mit```<button>``` wird ein Button erstellt. Damit er funktioniert braucht man eine Methode in Typescript. Weiteres dazu im Abschnitt [TypeScript](#TypeScript). Die Zusatzinformation *(click)* wird angegeben, damit das Programm weiß was ich tun möchte.
+Mit```<button>``` wird ein Button erstellt. Damit er funktioniert braucht man eine Methode in Typescript (weiteres dazu im Abschnitt [TypeScript](#TypeScript)). Die Zusatzinformation *(click)* wird angegeben, damit das Programm weiß was ich tun möchte.
 
 ```
 <button  (click)="onButtonClicked()">Hello</button>
