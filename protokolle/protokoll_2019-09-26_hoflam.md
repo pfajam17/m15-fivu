@@ -210,7 +210,7 @@ wird zum Definieren des Stils für viele HTML-Seiten verwendet
  - kann in einem beliebigen Texteditor geschrieben werden
  - Datei darf keinen HTML-CODE verwenden & wird mit .css gespeichert
 
-Alles nötige über CSS findet man im [CSS Tuturial](https://www.w3schools.com/css/default.asp).
+Alles Nötige über CSS findet man im [CSS Tuturial](https://www.w3schools.com/css/default.asp).
 
 **häufige Beispiele:**
 
