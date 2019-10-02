@@ -12,12 +12,19 @@
 ## Inhaltsverzeichnis
 
 1. HTML
+
 1.1 Was ist HTML
+
 1.2 HTML Basics
+
 2. CSS
+
 2.1 Was ist CSS?
+
 2.2 CSS Basics
+
 3. TypeScript
+
 3.1 Einführung in TypesScript
 
 ----------------------------------------------------------------------------------------------
