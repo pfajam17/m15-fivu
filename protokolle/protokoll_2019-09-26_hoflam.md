@@ -1,6 +1,6 @@
 # Protokoll FIVU/hoflam 5AHME (2019/20)
 
-* **Thema:** HTML, CSS und TypeScript
+* **Thema:** HTML, CSS, TypeScript
 * **Datum:** 26.09.2019
 * **Gefehlt:** Nicolas Perl
 * **Erstellt von:** Lara Hofer
@@ -11,21 +11,14 @@
 
 ## Inhaltsverzeichnis
 
-1. HTML
-
-1.1 Was ist HTML
-
-1.2 HTML Basics
-
-2. CSS
-
-2.1 Was ist CSS?
-
-2.2 CSS Basics
-
-3. TypeScript
-
-3.1 Einführung in TypesScript
+1. [HTML](#HTML)
+    1. [Was ist HTML?](#Was ist HTML?)
+    2. [HTML Basics](#HTML Basics)
+2. [CSS](#CSS)
+    1. [Was ist CSS?](#Was ist CSS?)
+    2. [CSS Basics](#CSS Basics)
+3. [TypeScript](#TypeScript)
+    1. [Einführung in TypesScript](#Einführung in TypeScript)
 
 ----------------------------------------------------------------------------------------------
 
@@ -258,6 +251,8 @@ definiert einen Rand (Leerzeichen) außerhalb des Rahmens
 ```
 
 ## TypeScript
+
+Einführung in TypeScript
 
 [TypeScript](https://de.wikipedia.org/wiki/TypeScript) ist ein Programmiersprache, entwickelt von Microsoft. Es verfügt in Ergänzung zu JavaScript über ein stärkeres Typsystem, wie man es aus Programmiersprachen wie Java oder C# kennt. Durch die starke Typisierung kann der Compiler Funktionsaufrufe besser prüfen und es können Fehler bereits zur Compilezeit erkannt werden. Jeder [JavaScript](https://de.wikipedia.org/wiki/JavaScript "JavaScript")-Code ist auch gültiger TypeScript-Code und ist somit in allen Browsern und auf allen Plattformen ausführbar. Auch JavaScript Bibliotheken können in TypeScript verwendet werden.
 In JavaScript werden Variablen mit *var* eingeleitet. In TypeScript hingegen können Variablen auch mit *cons* und *let* eingeleitet werden.
