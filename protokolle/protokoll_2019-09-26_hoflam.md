@@ -174,6 +174,7 @@ Es gibt 3 wesentliche Arten wir CSS erfolgen kann:
     
 
 *Inline CSS*
+
 wird verwendet, um einem einzelnen HTML Element einen eindeutigen Stil zuzuweisen
  -   Inline CSS verwendet Style -Attribute eines HTML-Elements
 ```
@@ -181,6 +182,7 @@ wird verwendet, um einem einzelnen HTML Element einen eindeutigen Stil zuzuweise
 ```
 
 *Internal CSS*
+
 wird verwendet, um einen Stil für eine einzelne HTML-Seite zu definieren
 
  -   wird im Abschnitt ```<head>``` einer HTML-Seite in einem ```<style>``` -Element definiert
@@ -196,6 +198,7 @@ wird verwendet, um einen Stil für eine einzelne HTML-Seite zu definieren
 ```
 
 *External CSS*
+
 wird zum Definieren des Stils für viele HTML-Seiten verwendet
  -   mit externen Stylesheet kann man das Erscheinungsbild einer gesamte Website ändern, indem eine einzelne Datei geändert wird
     
@@ -209,7 +212,7 @@ wird zum Definieren des Stils für viele HTML-Seiten verwendet
 
 Alles nötige über CSS findet man im [CSS Tuturial](https://www.w3schools.com/css/default.asp).
 
-häufige Beispiele:
+**häufige Beispiele:**
 
 *CSS Fonts (Schriften)*
 -   Farbe: **color**
@@ -224,6 +227,7 @@ Bsp.:
 ```
  
 *CSS Padding/“Polsterung“*
+
  definiert Abstand zwischen Text&Rand
 -   padding
 Bsp.:
@@ -232,6 +236,7 @@ Bsp.:
 ```
 
 *CSS Margin (Spanne)*
+
 definiert einen Rand (Leerzeichen) außerhalb des Rahmens
 -   margin 
 ```
@@ -246,14 +251,17 @@ definiert einen Rand (Leerzeichen) außerhalb des Rahmens
 -   gibt eine eindeutige ID für ein HTML-Element an (der Wert muss innerhalb des HTML-Dokuments eindeutig sein) 
 -   kann von CSS und JavaScript verwendet werden, um bestimmte Aufgaben für das Element mit dem spezifischen ID-Wert auszuführen
 -   um in CSS ein Element mit einer bestimmten ID auszuwählen ist ein Rautezeichen (#) vor dem ID-Element zu setzen 
+
 ```
 #mycomponent {
   color:green
 }
 ```
+
 *„class“ - Attribut*
 -   wird verwendet, um gleiche Stile für Elemente mit demselben Klassennamen zu definieren
 -   alle HTML-Elemente erhalten mit demselben Klassenattribut denselben Stil
+
  ```
 .myClass {
   color:blue
@@ -262,7 +270,7 @@ definiert einen Rand (Leerzeichen) außerhalb des Rahmens
 
 ## TypeScript
 
-Einführung in TypeScript
+### Einführung in TypeScript
 
 [TypeScript](https://de.wikipedia.org/wiki/TypeScript) ist ein Programmiersprache, entwickelt von Microsoft. Es verfügt in Ergänzung zu JavaScript über ein stärkeres Typsystem, wie man es aus Programmiersprachen wie Java oder C# kennt. Durch die starke Typisierung kann der Compiler Funktionsaufrufe besser prüfen und es können Fehler bereits zur Compilezeit erkannt werden. Jeder [JavaScript](https://de.wikipedia.org/wiki/JavaScript "JavaScript")-Code ist auch gültiger TypeScript-Code und ist somit in allen Browsern und auf allen Plattformen ausführbar. Auch JavaScript Bibliotheken können in TypeScript verwendet werden.
 In JavaScript werden Variablen mit *var* eingeleitet. In TypeScript hingegen können Variablen auch mit *cons* und *let* eingeleitet werden.
@@ -272,10 +280,12 @@ Um sich unter "TypeScript" was vorstellen zu können ist das einfachste Beispiel
 **Beispiel: my-first-ng-app**
 
 *HTML:*
+
 ```
 <button  (click)="onButtonClicked()">Hello</button>
 ```
 *TypeScript:*
+
 ```
 export  class  AppComponent {
   public  myWelcome  =  'Hello';
