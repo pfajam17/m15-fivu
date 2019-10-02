@@ -34,6 +34,7 @@ Die aktuelle Version ist seit dem 14. Dezember 2017 _HTML 5.2_ die bereits von v
 HTML dient dazu, einen Text zu strukturieren, nicht aber zu formatieren. Dazu verwendet man [CSS](#CSS). 
 
 \*¹ = eine maschinenlesbare Sprache für die Gliederung und Formatierung von Texten und anderen Daten
+
 \*²  Metadaten sind Daten zum HTML Dokument
 
 Quelle: https://de.wikipedia.org/wiki/Hypertext_Markup_Language
