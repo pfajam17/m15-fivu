@@ -26,7 +26,7 @@
 
 ### Was ist HTML?
 
-[HTML](https://de.wikipedia.org/wiki/Hypertext_Markup_Language) oder *Hypertext Markup Language*, ist eine der häufigsten Codeformen der Welt. Es wird auf so ziemlich jeder Webseite verwendet und ermöglicht es Webdesignern, Texte, Bilder, Videos und andere Inhalte klar und prägnant darzustellen. 
+[HTML](https://de.wikipedia.org/wiki/Hypertext_Markup_Language) oder *Hypertext Markup Language*, ist eine der häufigsten Codeformen der Welt. Es wird auf so ziemlich jeder Webseite verwendet und ermöglicht es Webdesignern, Texte, Bilder, Videos und andere Inhalte klar darzustellen. 
 HTML ist eine textbasierte Auszeichnungssprache\*¹ zur Strukturierung elektronischer Dokumente wie Texte mit Hyperlinks, Bildern und anderen Inhalten. HTML-Dokumente sind die Grundlage des World Wide Web und werden von Webbrowsern dargestellt. Neben den vom Browser angezeigten Inhalten können HTML-Dateien zusätzliche Angaben in Form von Metainformationen\*² enthalten, z. B. über die im Text verwendeten Sprachen, den Autor oder den zusammengefassten Inhalt des Textes.
 
 Die aktuelle Version ist seit dem 14. Dezember 2017 _HTML 5.2_ die bereits von vielen aktuellen Webbrowsern und anderen Layout-Engines unterstützt wird. Auch die _Extensible Hypertext Markup Language_ (XHTML) wird durch HTML5 ersetzt.
