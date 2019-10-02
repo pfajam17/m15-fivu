@@ -63,7 +63,9 @@ In dem Tuturial auf der Seite [w3schools - HTML](https://www.w3schools.com/html/
 **Headings**: von ```<h1>``` bis ```<h6>```
 
 **Paragraphs**: ``<p>`` ``</p>``
+
 ```<p>``` … Start Tag (opening tag)
+
 ```</p>```  … End Tag (closing tag)
 
 **Links**: ```<a>```..```</a>``` → Ziel im Attribut „href“
