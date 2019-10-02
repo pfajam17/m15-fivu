@@ -18,7 +18,7 @@
     1. [Was ist CSS?](#was-ist-CSS)
     2. [CSS Basics](#CSS-Basics)
 3. [TypeScript](#TypeScript)
-    1. [Einführung in TypesScript](#einführung-in-typeScript)
+    1. [Einführung in TypesScript](#einführung-in-typescript)
 
 ----------------------------------------------------------------------------------------------
 
