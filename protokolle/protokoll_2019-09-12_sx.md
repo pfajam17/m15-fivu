@@ -2,10 +2,9 @@
 
 * **Thema:** Installation Node.js, Angular, Angular CLI
 * **Datum:** 12.9.2019
-* **Gefehlt:** Hörmann
+* **Gefehlt:** Korrenn
 * **Erstellt von:** sx
-* **Protokoll letzte Einheit:**
-* **Protokoll nächste Einheit**
+* **Protokoll 2. Einheit**: [protokoll_2019-09-19_brelom15.md](protokoll_2019-09-19_brelom15.md)
 
 ----------------------------------------------------------------------------------------------
 
