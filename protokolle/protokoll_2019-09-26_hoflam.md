@@ -286,7 +286,7 @@ Um sich unter "TypeScript" was vorstellen zu können ist das einfachste Beispiel
 ```
 *TypeScript:*
 
-```
+```TypeScript
 export  class  AppComponent {
   public  myWelcome  =  'Hello';
   private  cnt  =  1;
