@@ -2,10 +2,9 @@
 
 * **Thema:** Installation Node.js, Angular, Angular CLI
 * **Datum:** 12.9.2019
-* **Gefehlt:** Hörmann
+* **Gefehlt:** Korenn
 * **Erstellt von:** sx
-* **Protokoll letzte Einheit:**
-* **Protokoll nächste Einheit**
+* **Protokoll 2. Einheit (19.9.2019)**: 
 
 ----------------------------------------------------------------------------------------------
 
