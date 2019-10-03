@@ -105,7 +105,7 @@ Mit```<button>``` wird ein Button erstellt. Damit er funktioniert braucht man ei
 
 *Paragraph:*
 
-```
+```HTML
 <p id="mycomponent">
 {{myWelcome}}
 </p> 
@@ -117,7 +117,7 @@ das soll ein text sein
 
 *geordnete Liste (ol = ordered list):*
 
-```
+```HTML
 <ol>
 
 <li>first</li>
@@ -129,7 +129,7 @@ das soll ein text sein
 
  *ungeordnete Liste (ul = unordered list):*
  
- ```
+ ```HTML
 <ul  class ="myClass">
 
 <li>first point</li>
@@ -140,13 +140,13 @@ das soll ein text sein
 
  *Link:*  
  
-```
+```HTML
 <a  target="_blank"  href="https://www.google.at/">Google Link</a>
 ```
 
 *Bild:*
 
-```
+```HTML
 <img  src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
 ```
 
@@ -177,7 +177,7 @@ Es gibt 3 wesentliche Arten wir CSS erfolgen kann:
 
 wird verwendet, um einem einzelnen HTML Element einen eindeutigen Stil zuzuweisen
  -   Inline CSS verwendet Style -Attribute eines HTML-Elements
-```
+```HTML
 <h1 style=“color:blue;“> >/h1>
 ```
 
@@ -187,7 +187,7 @@ wird verwendet, um einen Stil für eine einzelne HTML-Seite zu definieren
 
  -   wird im Abschnitt ```<head>``` einer HTML-Seite in einem ```<style>``` -Element definiert
     
-```
+```HTML
 <head>
   <style>
     body {background-color: powderblue;}
@@ -202,7 +202,7 @@ wird verwendet, um einen Stil für eine einzelne HTML-Seite zu definieren
 wird zum Definieren des Stils für viele HTML-Seiten verwendet
  -   mit externen Stylesheet kann man das Erscheinungsbild einer gesamte Website ändern, indem eine einzelne Datei geändert wird
     
-```
+```HTML
 <head>
   <link rel=“Stylesheet“ href=“styles.css“>
 </head>
@@ -222,7 +222,7 @@ Alles Nötige über CSS findet man im [CSS Tuturial](https://www.w3schools.com/c
 **CSS Border/Rahmen**
 -   Rahmen: border
 Bsp.:
-```
+```HTML
 { border :1px solid powderblue; }
 ```
  
@@ -231,7 +231,7 @@ Bsp.:
  definiert Abstand zwischen Text&Rand
 -   padding
 Bsp.:
-```
+```HTML
 { padding:30px; }
 ```
 
@@ -239,7 +239,7 @@ Bsp.:
 
 definiert einen Rand (Leerzeichen) außerhalb des Rahmens
 -   margin 
-```
+```HTML
 { margin:50px; }
 ```    
 
@@ -252,7 +252,7 @@ definiert einen Rand (Leerzeichen) außerhalb des Rahmens
 -   kann von CSS und JavaScript verwendet werden, um bestimmte Aufgaben für das Element mit dem spezifischen ID-Wert auszuführen
 -   um in CSS ein Element mit einer bestimmten ID auszuwählen ist ein Rautezeichen (#) vor dem ID-Element zu setzen 
 
-```
+```HTML
 #mycomponent {
   color:green
 }
@@ -262,7 +262,7 @@ definiert einen Rand (Leerzeichen) außerhalb des Rahmens
 -   wird verwendet, um gleiche Stile für Elemente mit demselben Klassennamen zu definieren
 -   alle HTML-Elemente erhalten mit demselben Klassenattribut denselben Stil
 
- ```
+ ```HTML
 .myClass {
   color:blue
 }
@@ -281,7 +281,7 @@ Um sich unter "TypeScript" was vorstellen zu können ist das einfachste Beispiel
 
 *HTML:*
 
-```
+```HTML
 <button  (click)="onButtonClicked()">Hello</button>
 ```
 *TypeScript:*
