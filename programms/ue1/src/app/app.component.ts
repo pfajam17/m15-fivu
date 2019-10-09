@@ -1,0 +1,27 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  public myWelcome = 'Hello';
+  private cnt = 1;
+
+  public constructor() {
+    console.log('app.component constructor');
+    this.myWelcome = 'Hello2';
+
+    setInterval( () => {
+      this.cnt++;
+      this.myWelcome = 'Hello ' + this.cnt;
+      console.log('cnt=' + this.cnt);
+    }, 1000);
+
+  }
+
+  public onButtonClicked() {
+    this.cnt=0;
+  }
+}
