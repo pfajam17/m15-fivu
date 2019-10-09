@@ -5,7 +5,7 @@
 * **Datum:** 04.10.2019
 * **Gefehlt:** 
 * **Erstellt von:** Stefan Hörmann
-* **Protokoll letzte Einheit:** [Protokoll 26.10.2019](protokoll_2019-09-12_hoflam15.md)
+* **Protokoll letzte Einheit:** [Protokoll 26.09.2019](protokoll_2019-09-26_hoflam.md)
 * **Protokoll nächste Einheit**
 
 ----------------------------------------------------------------------------------------------
