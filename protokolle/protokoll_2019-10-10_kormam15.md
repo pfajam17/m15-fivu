@@ -54,15 +54,63 @@ supports closures, partial application, |
 | classes cannot be redefined in a way that affects any existing object instances | prototypes can be redefined at runtime and has immediate effect for all referring objects |  
 | methods cannot be redefined at runtime | methods in an object can be redefined independently of its prototype |  
 ### Primitive Datentypen  
+Der Typ einer Variable wird nicht angegeben, sondern ergibt sich über dessen Wert automatisch. Er lässt sich mit dem Schlüsselwort **typeof** bestimmen.  
+Variablen können ohne Schlüsselwort (nicht empfehlenswert) oder mit den Schlüsselwörtern  
+**var** (es ist egal wann die Variable deklariert wird solang sie deklariert wird)  
+und  
+**let** (wie in C oder Java muss zuerst die Variable deklariert und dann mit ihr gearbeitet werden)  
+erzeugt werden.  
 #### number  
+Jede number wird als 64-Bit Fließkommazahl gespeichert, und es gibt daher keine Unterscheidung zwischen float / double / byte / short / int / long und char.  
 #### string  
+Zeichenketten können mit einfachen oder doppelten Hochkommas umschlossen werden, wobei häufig das einfache Hochkomma verwendet wird.  
+Die jeweils andere Art wird dann als normales Zeichen interpretiert.  
 #### boolean  
+Variable dieses Typs können die Werte true und false annehmen.  
 #### null  
+Der Typ null hat nur den einzigen Wert null.  
+Er wird verwendet bei Variablen die normalerweise den Typ object haben, aber kein gültiges Objekt aufweisen.  
 #### undefined  
+Der Typ undefined hat nur den einzigen Wert undefined.  
+Er wird verwendet bei:  
+- globalen Variablen die nicht initialisiert sind  
+- nicht existenten Objekteigenschaften  
+- nicht vorhandenen Funktionsparametern  
+- Funktionsrückgaben von Funktionen die keinen Wert zurück liefern  
+  
+Mit dem Schlüsselwort delete kann eine Variable wieder zu undefined werden.  
 #### object  
-
+Für Objekte werden keine Klassen benötigt.  
+Funktionen in Objekten werden Objektmethoden genannt.  
+Auch Arrays und Funktionen sind Objekte und können in Variablen gespeichert werden, als Parameter übergeben oder von Funktionen zurückgegeben werden.  
 ### Objekte erzeugen  
-
+Man kann Objekte auf 3 verschiedenen Arten erstellen:  
+**Literalschreibweise:** mit dieser Schreibweise kann es dieses Objekt nur einmal geben (es ist somit ein sogenanntes **Singelton**)  
+Bsp.:
+``JS
+var book = {
+  name : 'Javascript',                      // primitive data-type string
+  author: {                                 // object
+    firstname : 'Philip',         
+    surname : 'Ackermann'
+  },
+  getAuthor : function() {                  // function
+    return this.author.firstname + " " + this.author.surname;
+  }
+};
+``
+**Konstruktorfunktion:** Wie in Java lassen sich Objekte mit dem Schlüsselwort new und der Angabe des Konstruktors erzeugen.  
+Bsp.:  
+``JS
+var author1 = new Author("Philip", "Ackermann");
+``
+**Object.create():** Seit ECMAScript 5 können Objekte mit Hilfe der Funktion Object.create() erzeugt werden. Als Parameter wird der Prototyp des zu erstellenden Objekts verwendet.  
+Bsp.:  
+``JS
+var author = Object.create(Object.prototype);
+author.firstname = 'Karl';
+author.lastname = 'Schneider';
+``
 ### Vererbung  
 #### Prototypische Vererbung  
 #### Pseudoklassische Vererbung  
