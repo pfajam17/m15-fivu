@@ -86,8 +86,8 @@ Auch Arrays und Funktionen sind Objekte und können in Variablen gespeichert wer
 ### Objekte erzeugen  
 Man kann Objekte auf 3 verschiedenen Arten erstellen:  
 **Literalschreibweise:** mit dieser Schreibweise kann es dieses Objekt nur einmal geben (es ist somit ein sogenanntes **Singelton**)  
-Bsp.:
-``JS
+Bsp.:  
+``JavaScript
 var book = {
   name : 'Javascript',                      // primitive data-type string
   author: {                                 // object
@@ -106,15 +106,105 @@ var author1 = new Author("Philip", "Ackermann");
 ``
 **Object.create():** Seit ECMAScript 5 können Objekte mit Hilfe der Funktion Object.create() erzeugt werden. Als Parameter wird der Prototyp des zu erstellenden Objekts verwendet.  
 Bsp.:  
-``JS
+``js
 var author = Object.create(Object.prototype);
 author.firstname = 'Karl';
 author.lastname = 'Schneider';
 ``
 ### Vererbung  
+Für die Vererbung von Objekten stehen zwei Prinzipien zur Auswahl, da wir die Java ähnliche benutzen gehe ich nicht näher darauf ein:
 #### Prototypische Vererbung  
+Hier werden Objekte mit Object.create(...) erzeugt, und der Prototyp (das Eltern-Objekt) wird als Parameter übergeben.  
 #### Pseudoklassische Vererbung  
+Hier erfolgt die Vererbung mit Hilfe von Konstruktorfunktionen. Im Konstruktor wird der Konstruktor des Elternobjekts mittel call(...) aufgerufen.
+Ab ECS6 stehen syntaktisch als Alternative auch die Schlüsselwörter class , extends und super zur Verfügung.  
+### Datenkapselung  
+Was das Schlüsselwörtchen *private* elegant löst muss in JS umständlichst gelöst werden:  
+``js
+function Bauteil(value, voltage, current)
+{
+  var value = value;
+  var voltage = voltage;
+  var current = current;
+  this.getValue = function() { return value; };
+  this.getVoltage = function() { return voltage; };
+  this.getCurrent = function() { return current; };
+}
 
+Bauteil.prototype.getPower = function() { return this.getVoltage() * this.getCurrent(); };
+Bauteil.prototype.getEnergy = function() { return undefined; };
+
+function Widerstand(value, voltage) {
+  if (!(this instanceof Widerstand)) {
+    return new Widerstand(value, voltage);
+  }
+  Bauteil.call(this, value, voltage, voltage/value);
+  this.getEnergy = function() { return 0; };
+
+}
+
+Widerstand.prototype = new Bauteil();
+Widerstand.prototype.constructor = Widerstand;
+
+var r1 = new Widerstand(1000, 10, 0.1);
+
+console.log(r1.getValue());
+console.log(r1.getPower());
+console.log(r1.getEnergy());
+``
+Als alternative gibt es noch eine Möglichkeit mit *IIFE*.  
+``js
+
+
+
+var Bauteil = (
+
+  // äußere Funktion, sie liefert eine innere Funktion zurück
+  function() {
+    var _value;
+    var _voltage;
+    var _current;
+  
+    // innere Funktion kann Variable der äußeren Funktion initialisieren
+    function Bauteil(value, voltage, current) {
+      _value = value;
+      _voltage = voltage;
+      _current = current;
+    }
+  
+    Bauteil.prototype.getValue = function() { return _value; };
+    Bauteil.prototype.getVoltage = function() { return _voltage; };
+    Bauteil.prototype.getCurrent = function() { return _current; };
+    Bauteil.prototype.getPower = function() { return _voltage * _current; };
+    Bauteil.prototype.getEnergy = function() { return undefined; };  
+
+    return Bauteil;
+  }
+)(); // die abschließenden () realisieren die IIFE
+
+
+function Widerstand(value, voltage) {
+  if (!(this instanceof Widerstand)) {
+    return new Widerstand(value, voltage);
+  }
+  Bauteil.call(this, value, voltage, voltage/value);
+}
+
+Widerstand.prototype = new Bauteil();
+Widerstand.prototype.constructor = Widerstand;
+Widerstand.prototype.getEnergy = function() { return 0; };
+Widerstand.prototype.getValue = function() {
+  return Bauteil.prototype.getValue.call(this) + " \u2126";
+};
+
+var r1 = new Widerstand(1000, 10, 0.1);
+
+console.log(r1.getValue());
+console.log(r1.getPower());
+console.log(r1.getEnergy());
+
+``
 ### Multithreading
-
+Javascript ist als Single-Thread Sprache entworfen worden. Dadurch entfallen Probleme der Thread-Synchronisierung und mögliche Deadlocks durch sich gegenseitig blockierende Threads.  
 ## Programm  
+a
