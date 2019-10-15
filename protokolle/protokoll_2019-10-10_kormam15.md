@@ -11,7 +11,7 @@
 
 ## Inhaltsverzeichnis
 
-1. [Java Script](#java-script)
+1. [Java Script](#javascript)
     1. [Was ist ander als in Java](#was-ist-anders-als-in-java)
     1. [Primitive Datentypen](#primitive-datentypen)
         1. [number](#number)
