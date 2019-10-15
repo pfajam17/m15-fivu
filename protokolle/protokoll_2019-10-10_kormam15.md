@@ -12,13 +12,20 @@
 ## Inhaltsverzeichnis
 
 1. [Java Script](#java-script)
-    1. [Was ist HTML?](#was-ist-HTML)
-    2. [HTML Basics](#HTML-Basics)
-2. [CSS](#CSS)
-    1. [Was ist CSS?](#was-ist-CSS)
-    2. [CSS Basics](#CSS-Basics)
-3. [TypeScript](#TypeScript)
-    1. [Einführung in TypesScript](#einführung-in-typescript)
+    1. [Was ist ander als in Java](#was-ist-anders-als-in-java)
+    1. [Primitive Datentypen](#primitive-datentypen)
+        1. [number](#number)
+        1. [string](#string)
+        1. [boolean](#boolean)
+        1. [null](#null)
+        1. [undefined](#undefined)
+    1. [Objekte erzeugen](#objekte-erzeugen)
+    1. [Vererbung](#vererbung)
+        1. [Prototypische Vererbung](#prototypische-vererbung)
+        1. [Pseudoklassische Vererbung](#pseudoklassische-vererbung)
+    1. [Datenkapselung](#datenkapselung)
+    1. [Multithreading](#multithreading)
+2. [Programm](#programm)  
 
 ----------------------------------------------------------------------------------------------
 
@@ -38,7 +45,7 @@ Der als ECMAScript (ECMA 262) standardisierte Sprachkern von JavaScript beschrei
 Die wesentlichen Unterschiede werden anhand dieser Tabelle näher gebracht:  
 
 | Java | JavaScript |  
-| ---------------------------------------------- | ---------- |  
+|:----------------------------------------------:|:----------:|  
 | statically strong typed language variables cannot change their type at runtime | dynamially weak typed language variables can change their type at runtime |    
 | class based | protoype based |  
 | 8 primitive data-types boolean, byte, short, int, long, float, double | 6 primitive data types boolean, number, string, null, undefined, object |  
@@ -108,7 +115,8 @@ var book = {
   }
 };
 ```
-**Konstruktorfunktion:** Wie in Java lassen sich Objekte mit dem Schlüsselwort new und der Angabe des Konstruktors erzeugen.  
+**Konstruktorfunktion:**   
+Wie in Java lassen sich Objekte mit dem Schlüsselwort new und der Angabe des Konstruktors erzeugen.  
 Bsp.:  
 ```typescript
 var author1 = new Author("Philip", "Ackermann");
