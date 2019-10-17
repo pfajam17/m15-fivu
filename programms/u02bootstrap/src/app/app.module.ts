@@ -6,10 +6,12 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {BuchListeComponent} from './buchliste.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, BuchListeComponent
   ],
   imports: [
     NgbModule,

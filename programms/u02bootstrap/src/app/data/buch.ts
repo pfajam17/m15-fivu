@@ -1,18 +1,25 @@
 
-class Buch {
+export class Buch {
+    private name: string;
     private author: string;
     private seitenanzahl: number;
     private verliehen: boolean;
 
-    public constructor(author: string, seitenanzahl: number, verliehen: boolean) {
+    public constructor(name: string, author: string, seitenanzahl: number, verliehen: boolean) {
 
-        if ( !author || seitenanzahl < 1 || (verliehen !== true && verliehen !== false)) {
+        if (!name || !author || seitenanzahl < 1 || (verliehen !== true && verliehen !== false)) {
             throw new Error('invalid Arguments');
         }
+        this.name = name;
         this.author = author;
         this.seitenanzahl = seitenanzahl;
         this.verliehen = verliehen;
     }
+
+    public getName(): string {
+        return this.name;
+    }
+
     public getAuthor(): string {
         return this.author;
     }
