@@ -1,0 +1,30 @@
+<div class="container">
+    <h6>Buchliste: {{list.length}}
+        <span *ngIf="list.length !== 1">Bücher</span>
+        <span *ngIf="list.length === 1">Buch</span>
+    </h6>
+    
+    <ul>
+        <li *ngFor="let book of list">{{book.getName()}}</li>
+    </ul>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Autor</th>
+                <th scope="col">Seitenanzahl</th>
+                <th scope="col">Verliehen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of list">
+                <td>{{book.getName () }}</td>
+                <td>{{book.getAuthor () }}</td>
+                <td>{{book.getPageNum () }}</td>
+                <td>{{book.getInStock () }}</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</div>
