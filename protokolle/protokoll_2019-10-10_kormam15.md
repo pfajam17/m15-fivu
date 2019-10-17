@@ -12,7 +12,7 @@
 ## Inhaltsverzeichnis
 
 1. [Java Script](#javascript)
-    1. [Was ist ander als in Java](#was-ist-anders-als-in-java)
+    1. [Was ist anders als in Java](#was-ist-anders-als-in-java)
     1. [Primitive Datentypen](#primitive-datentypen)
         1. [number](#number)
         1. [string](#string)
@@ -30,9 +30,9 @@
 ----------------------------------------------------------------------------------------------
 
 ## JavaScript  
-`JavaScript (kurz JS) ist eine Skriptsprache, die ursprünglich 1995 von Netscape für dynamisches HTML in Webbrowsern entwickelt wurde, um Benutzerinteraktionen auszuwerten, Inhalte zu verändern, nachzuladen oder zu generieren und so die Möglichkeiten von HTML und CSS zu erweitern. Heute findet JavaScript auch außerhalb von Browsern Anwendung, so etwa auf Servern und in Microcontrollern.  
-Der als ECMAScript (ECMA 262) standardisierte Sprachkern von JavaScript beschreibt eine dynamisch typisierte, objektorientierte, aber klassenlose Skriptsprache. Sie wird allen objektorientierten Programmierparadigmen unter anderem auf der Basis von Prototypen gerecht, deren Deklaration ab ECMAScript 6 mit einer Syntax ermöglicht wird, wie sie ähnlich auch bei klassenbasierten Programmiersprachen üblich ist. In JavaScript lässt sich je nach Bedarf objektorientiert, prozedural oder funktional programmieren.`  
-[Quelle: Wikipedia](https://de.wikipedia.org/wiki/JavaScript)  
+> JavaScript (kurz JS) ist eine Skriptsprache, die ursprünglich 1995 von Netscape für dynamisches HTML in Webbrowsern entwickelt wurde, um Benutzerinteraktionen auszuwerten, Inhalte zu verändern, nachzuladen oder zu generieren und so die Möglichkeiten von HTML und CSS zu erweitern. Heute findet JavaScript auch außerhalb von Browsern Anwendung, so etwa auf Servern und in Microcontrollern.  
+Der als ECMAScript (ECMA 262) standardisierte Sprachkern von JavaScript beschreibt eine dynamisch typisierte, objektorientierte, aber klassenlose Skriptsprache. Sie wird allen objektorientierten Programmierparadigmen unter anderem auf der Basis von Prototypen gerecht, deren Deklaration ab ECMAScript 6 mit einer Syntax ermöglicht wird, wie sie ähnlich auch bei klassenbasierten Programmiersprachen üblich ist. In JavaScript lässt sich je nach Bedarf objektorientiert, prozedural oder funktional programmieren.   
+Quelle: [Wikipedia](https://de.wikipedia.org/wiki/JavaScript)  
   
 **Mit JavaScript kann man:**  
 - Server-seitige Programm schreiben die auf einem Web-Server laufen  
@@ -40,7 +40,7 @@ Der als ECMAScript (ECMA 262) standardisierte Sprachkern von JavaScript beschrei
 - Programme schreiben die mit Hilfe einer JavaScript-Engine ausgeführt werden  
 
 ### Was ist anders als in Java?  
-`"Java:JavaScript = car:carpet" Steiner Manfred 10.10.2019`  
+> "Java:JavaScript = car:carpet" Aussage Steiner Manfred 10.10.2019  
   
 Die wesentlichen Unterschiede werden anhand dieser Tabelle näher gebracht:  
 
