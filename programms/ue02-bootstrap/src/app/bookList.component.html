@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
     <h6>Buchliste: {{list.length}}
         <span *ngIf="list.length !== 1">Bücher</span>
         <span *ngIf="list.length === 1">Buch</span>
@@ -25,6 +25,5 @@
                 <td>{{book.getInStock () }}</td>
             </tr>
         </tbody>
-        
     </table>
 </div>
