@@ -1,7 +1,7 @@
 # Protokoll FIVU/kormam15 5AHME (2019/20)
 
 * **Thema:** Typescript, HTML
-* **Datum:** 10.10.2019
+* **Datum:** 17.10.2019
 * **Gefehlt:** -
 * **Erstellt von:** Orthofer David
 * **Protokoll 5.Einheit:** [protokoll_2019-10-10_kormam15.md](protokoll_2019-10-10_kormam15.md)
@@ -14,6 +14,7 @@
 1. [Git Verzeichnis clonen](#git-verzeichnis-clonen)
 1. [TSLint](#tslint)
 1. [Collections in Java und Typescript](#collections-in-java-und-typescript)
+1. [Programm](#programm)
 
 ----------------------------------------------------------------------------------------------
 
@@ -50,7 +51,15 @@ Die Schnittstelle java.util.Map repräsentiert eine Zuordnung zwischen einem Sch
   
 ### Typescript 
 #### Array  
-Mit TypeScript kann man wie mit JavaScript mit Arrays von Werten arbeiten. Array-Typen können auf zwei Arten geschrieben werden. Zuerst legt man den Typ der Elemente fest, gefolgt von [ ].  
-Beispiel: `let list: number[] = [1, 2, 3];`  
+Arrays sind Sammlungen von null oder mehr Elementen. Arrays sind eine der am häufigsten verwendeten Datenstrukturen, da sie einfach und schnell Informationen abrufen können.
+
+Man kann sich ein Array als eine Schublade vorstellen, in der Dinge in Behältern aufbewahrt werden. Das Array verändert sich dynamisch.
+
+![Array](https://adrianmejia.com/images/array-drawer.jpg)
   
 #### Hashmap
+Maps und Arrays beschreiben alle denselben abstrakten Datentyp. Hash-Map-Implementierungen unterscheiden sich jedoch von Tree-Map-Implementierungen darin, dass eine Hash-Tabelle und ein binärer Suchbaum verwendet werden. HashMap ist wie eine Schublade, in der Dinge in Behältern aufbewahrt und beschriftet werden.  
+  
+![HashMap](https://adrianmejia.com/images/hashmap-drawer.jpg)  
+  
+## Programm
