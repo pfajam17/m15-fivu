@@ -4,7 +4,7 @@
 * **Datum:** 17.10.2019
 * **Gefehlt:** -
 * **Erstellt von:** Orthofer David
-* **Protokoll 5.Einheit:** [protokoll_2019-10-10_kormam15.md](protokoll_2019-10-10_kormam15.md)
+* **Protokoll 5.Einheit:** [protokoll_2019-10-10_kormam15.md](https://github.com/HTLMechatronics/m15-fivu/blob/kormam15/protokolle/protokoll_2019-10-10_kormam15.md#number)
 * **Protokoll 7.Einheit:** -
 
 ----------------------------------------------------------------------------------------------
