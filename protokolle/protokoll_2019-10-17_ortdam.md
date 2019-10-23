@@ -63,3 +63,103 @@ Maps und Arrays beschreiben alle denselben abstrakten Datentyp. Hash-Map-Impleme
 ![HashMap](https://adrianmejia.com/images/hashmap-drawer.jpg)  
   
 ## Programm
+*Anmerkungen zu Änderungen im Programm u02-bootstrap*  
+  
+### app.module.ts  
+```Typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { BuchListeComponent } from './buchliste.component';
+
+@NgModule({
+  declarations: [
+    AppComponent, BuchListeComponent
+  ],
+  imports: [
+    NgbModule,
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```  
+Um Komponenten verwenden zu können müssen diese exportiert bzw. importiert werden.  
+Bsp: `import { BuchListeComponent } from './buchliste.component';`  
+  
+### buch.component.ts  
+```Typescript
+import { Component } from '@angular/core';
+import { Buch } from './data/buch';
+
+@Component({
+  selector: 'app-buchliste',
+  templateUrl: './buchliste.component.html'
+})
+export class BuchListeComponent {
+
+    public list: Buch [] = [];
+
+    public constructor () {
+        this.list.push(new Buch('Verurteilt', 'Rushdie', 200, false));
+        this.list.push(new Buch('Mörder Ahoi', 'Agathe Christie', 300, false));
+        this.list.push(new Buch('Die Gefährten', 'J.R.R Tolkien', 600, false));
+    }
+}
+```  
+Mit `public list: Buch [] = [];` wird ein Array erstellt das anschließend im Kontruktur gefüllt wird.  
+Das Schlüsselwort `push` fügt dem Array neue Elemente hinzu.  
+  
+### buchliste.component.html  
+```Typescript
+<div class="container">
+    <h6>
+        Buchliste ({{list.length}}
+           <span *ngIf="list.length !== 1">Bücher</span>
+           <span *ngIf="list.length === 1">Buch</span>
+        )
+    </h6>
+    <ul>
+        <li *ngFor="let buch of list">
+            {{buch.getName()}}
+        </li>
+    </ul>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Nr</th>
+                <th scope="col">Name</th>
+                <th scope="col">Author</th>
+                <th scope="col">Seitenzahl</th>
+                <th scope="col">Verliehen</th>
+            </tr>
+        </thead>            
+        <tbody>
+            <tr *ngFor="let buch of list; let i=index;">
+                <td>{{i + 1}}</td>
+                <td>{{buch.getName()}}</td>
+                <td>{{buch.getAuthor()}}</td>
+                <td>{{buch.getSeitenanzahl()}}</td>
+                <td>{{buch.getVerliehen()}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+```  
+Mit dem Schlüsselwort `.length` kann angegeben werden wieviele Komponenten sich in der Liste befinden. Durch die zwei geschwungenen Klammern kommt es zur Interpolation (es wird auf die Liste zugegriffen).  
+  
+Außerdem wurden hier auch die **Direktiven** `Nglf` und `NgFor` verwendet.  
+  
+#### Nglf  
+Die Direktive `Nglf` ist geeignet für Verzweigungen.  
+Allgemeines Bsp: `<app-item-detail *ngIf="isActive" [item]="item"></app-item-detail>`  
+  
+#### NgFor  
+In einer Art Schleife wird durch die Liste gegangen. In unserem Fall wird mittels Interpolation auf die Variable Buch zugegriffen und mittels `getter` der Name geholt.  
+Allgemeines Bsp: `<div *ngFor="let item of items">{{item.name}}</div>`
