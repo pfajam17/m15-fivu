@@ -1,4 +1,4 @@
-# Protokoll FIVU/kormam15 5AHME (2019/20)
+# Protokoll FIVU/ortdam14 5AHME (2019/20)
 
 * **Thema:** Typescript, HTML
 * **Datum:** 17.10.2019
@@ -156,6 +156,11 @@ Mit dem Schlüsselwort `.length` kann angegeben werden wieviele Komponenten sich
   
 Außerdem wurden hier auch die **Direktiven** `Nglf` und `NgFor` verwendet.  
   
+#### Was ist eine Direktive?
+Eine Direktive ändert das Erscheinungsbild oder Verhalten eines DOM-Elements.  
+**`DOM Element`**  
+`Das Document Object Model (DOM, engl. für Dokumenten-Objekt-Modell) ist eine Spezifikation einer Programmierschnittstelle, welche HTML- oder XML-Dokumente als eine Baumstruktur darstellt.`
+  
 #### Nglf  
 Die Direktive `Nglf` ist geeignet für Verzweigungen.  
 Allgemeines Bsp: `<app-item-detail *ngIf="isActive" [item]="item"></app-item-detail>`  
@@ -163,3 +168,6 @@ Allgemeines Bsp: `<app-item-detail *ngIf="isActive" [item]="item"></app-item-det
 #### NgFor  
 In einer Art Schleife wird durch die Liste gegangen. In unserem Fall wird mittels Interpolation auf die Variable Buch zugegriffen und mittels `getter` der Name geholt.  
 Allgemeines Bsp: `<div *ngFor="let item of items">{{item.name}}</div>`
+  
+[Quelle](https://angular.io/guide/attribute-directives)  
+
