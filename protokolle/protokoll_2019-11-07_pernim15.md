@@ -28,6 +28,6 @@ In AngularJS ist ein Dienst eine Funktion oder ein Objekt, die bzw. das für Ihr
 
 Unsere Buchliste soll Daten von data.services erhalten (zentrale Klasse):  
 
-```C
+```JS
 int i = 1;
 ```
