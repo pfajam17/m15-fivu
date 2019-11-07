@@ -28,12 +28,40 @@ In AngularJS ist ein Dienst eine Funktion oder ein Objekt, die bzw. das für Ihr
 
 Unsere Buchliste soll Daten von data.services erhalten (zentrale Klasse). Meist ist hierzu ein eigener Ordner namens Services zu erstellen.   
 
+**Timing-Ereignisse** 
+
+Das window object ermöglicht die Ausführung von Code in festgelegten Zeitintervallen. 
+
+Diese Zeitintervalle werden als Zeitsteuerungsereignisse bezeichnet. 
+
+Die beiden wichtigsten Methoden zur Verwendung mit JavaScript sind: 
+```JS
+    setTimeout (Funktion, Millisekunden) 
+```
+- Führt eine Funktion aus, nachdem eine bestimmte Anzahl von Millisekunden gewartet wurde. 
+    
+```JS
+    setInterval (Funktion, Millisekunden) 
+```
+- Entspricht setTimeout(), wiederholt jedoch die Ausführung der Funktion kontinuierlich. 
+
+___ 
+
+## Promises 
+
+### Vergleich Java - Java Script 
+
+| Java | Java Script |  
+| --------------------------------------- | -------- |   
+| Threads | nicht Multithreading fähig - soll einfacher sein | 
+|   | Lösung: Promises | 
+
 **buchliste.components.ts**
 
 ```JS
 import { Component, ComponentFactoryResolver } from '@angular/core';
 import { Buch } from './data/buch';
-import { DataService } from './data/services/data.services';
+import { DataService } from './data/services/data.service';
 
 @Component({
   selector: 'app-buchliste',
@@ -73,7 +101,7 @@ import { NgModule } from '@angular/core';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
-import { DataService } from './data/services/data.services'; //zu importierendes Service
+import { DataService } from './data/services/data.service'; //zu importierendes Service
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BuchListeComponent } from './buchliste.component';
@@ -94,7 +122,7 @@ export class AppModule { }
 
 ```
 
-**data.services.ts**
+**data.service.ts**
 
 ```JS
 import { Injectable } from '@angular/core';
@@ -148,23 +176,6 @@ export class DataService {
     }
 }
 ```
-
-**Timing-Ereignisse** 
-
-Das window object ermöglicht die Ausführung von Code in festgelegten Zeitintervallen. 
-
-Diese Zeitintervalle werden als Zeitsteuerungsereignisse bezeichnet. 
-
-Die beiden wichtigsten Methoden zur Verwendung mit JavaScript sind: 
-```JS
-    setTimeout (Funktion, Millisekunden) 
-```
-- Führt eine Funktion aus, nachdem eine bestimmte Anzahl von Millisekunden gewartet wurde. 
-    
-```JS
-    setInterval (Funktion, Millisekunden) 
-```
-- Entspricht setTimeout(), wiederholt jedoch die Ausführung der Funktion kontinuierlich. 
 
 ___
 
