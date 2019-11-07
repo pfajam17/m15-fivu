@@ -12,23 +12,26 @@ ___
 
 ## Inhaltsverzeichnis
 
-1. Services 
-2. Promises
-    1. Vergleich Java -Java Script 
+1. [Services](#Services) 
+    [1.Timing Ereignisse](#Timing-Ereignisse)
+2. [Promises](#Promises)
+    1. [Vergleich Java mit Java Script](#Vergleich-Java-mit-Java-Script)
+    2. [Syntax](#Syntax)
+3. [Programme](#Programme)
    
 ___
 
 ## Services
 
-Services sind Objekte, welche uns helfen können, Daten zwischen Komponenten auszutauschen. Getter-Methoden wären eine mögliche Lösung, wobei man bei dieser Realisierung jedoch erst das Objekt benötigen würde. 
+Services sind Objekte, welche uns helfen können, Informationen zwischen Klassen auszutauschen, die sich nicht kennen. Getter-Methoden wären eine mögliche Lösung, wobei man bei dieser Realisierung jedoch erst das Objekt benötigen würde. 
 
-In AngularJS ist ein Dienst eine Funktion oder ein Objekt, die bzw. das für Ihre AngularJS-Anwendung verfügbar und auf diese beschränkt ist. AngularJS verfügt über ca. 30 integrierte Dienste. Wenn ein Prozess komplex wird oder sich nur schwer testen lässt, kann ein Service-Objekt hilfreich sein, um die jeweilige Codebasis zu bereinigen. Für viele Survices kann man auch Objekte verwenden, die sich bereits im DOM befinden, für eigene AngularJS-Anwendung gelten jedoch einige Einschränkungen.
+In AngularJS ist ein Dienst eine Funktion oder ein Objekt, die bzw. das für Ihre AngularJS-Anwendung verfügbar und auf diese beschränkt ist. AngularJS verfügt über ca. 30 integrierte Dienste. Wenn ein Prozess komplex wird oder sich nur schwer testen lässt, kann ein Service-Objekt hilfreich sein, um die jeweilige Codebasis zu bereinigen. Für viele Services kann man auch Objekte verwenden, die sich bereits im DOM befinden, für eigene AngularJS-Anwendung gelten jedoch einige Einschränkungen.
 
 #### Beispiel Buchliste: 
 
 Unsere Buchliste soll Daten von data.services erhalten (zentrale Klasse). Meist ist hierzu ein eigener Ordner namens Services zu erstellen.   
 
-**Timing-Ereignisse** 
+### Timing-Ereignisse 
 
 Das window object ermöglicht die Ausführung von Code in festgelegten Zeitintervallen. 
 
@@ -49,17 +52,38 @@ ___
 
 ## Promises 
 
-### Vergleich Java - Java Script 
+### Vergleich Java mit Java Script 
 
 | Java | Java Script |  
 | --------------------------------------- | -------- |   
 | mehrere Threads - Stichwort Multithreading | nicht Multithreading fähig - soll einfacher sein | 
 |   | Lösung: Promises | 
 
+Das Promise-Objekt (dt./deutsch Ein Versprechens-Objekt, das später eingelöst wird) wird für asynchrone Berechnungen verwendet. Ein Promise kann sich in einem von drei Zuständen befinden: 
+
+    pending: initialer Status, weder fulfilled noch rejected. (dt. schwebend) 
+    fulfilled (erfüllt): Operation erfolgreich. 
+    rejected (zurück gewiesen): Operation gescheitert. 
+
+#### Syntax: 
+```JS
+new Promise(executor);
+new Promise(function(resolve, reject) { ... });
+```
+
+
+executor (Ausführer)
+    Funktion mit den zwei Argumenten resolve und reject. Das erste Argument führt den Promise aus, das zweite verwirft ihn. Die Funktionen können ausgeführt werden, sobald die Operation durchgeführt wurde. 
+    
+![](https://mdn.mozillademos.org/files/8633/promises.png) 
+
+
+[Quelle](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
 Siehe Beispiel: 'buchliste' ist erst nach einer bestimmten Zeit verfügbar 
 -> deshalb wird ein sog. Promise (Versprechen) verwendet 
 
-
+## Programme
 
 **buchliste.components.ts**
 
