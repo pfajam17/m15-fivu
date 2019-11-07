@@ -98,6 +98,7 @@ import { DataService } from './data/services/data.service';     //DataService im
   selector: 'app-buchliste',
   templateUrl: './buchliste.component.html'
 })
+
 export class BuchListeComponent {
 
   public list: Buch[] = [];
@@ -112,8 +113,8 @@ export class BuchListeComponent {
       console.log('Promise liefert Ergebnis...');   //Statusausgabe an Terminal
       this.list = this.list.concat(liste);
     });
-    promise.catch((err) => {
-      console.log('Fehler aufgetreten!');
+    promise.catch((err) => {                //mögliche Fehler mit promise.catch abfangen
+      console.log('Fehler aufgetreten!');   //Statusausgabe an Terminal
     });
   }
 
@@ -171,6 +172,7 @@ export class DataService {
         this.list.push(new Buch('Mörder Ahoi', 'Agathe Christie', 300, false));
         this.list.push(new Buch('Die Gefährten', 'J.R.R. Tolkien,', 600, true));
     }
+    
     public getBuchList(): Promise<Buch[]> {     //funktioniert wie in Java 'doInBackground()' 
         try {
             /*Eine mögliche Realisierung: 
