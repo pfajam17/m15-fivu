@@ -26,7 +26,7 @@ In AngularJS ist ein Dienst eine Funktion oder ein Objekt, die bzw. das für Ihr
 
 #### Beispiel Buchliste: 
 
-Unsere Buchliste soll Daten von data.services erhalten (zentrale Klasse):  
+Unsere Buchliste soll Daten von data.services erhalten (zentrale Klasse). Meist ist hierzu ein eigener Ordner namens Services zu erstellen.   
 
 **buchliste.components.ts**
 
@@ -148,6 +148,22 @@ export class DataService {
     }
 }
 ```
+
+**Timing-Ereignisse** 
+
+Das window object ermöglicht die Ausführung von Code in festgelegten Zeitintervallen. 
+
+Diese Zeitintervalle werden als Zeitsteuerungsereignisse bezeichnet. 
+
+Die beiden wichtigsten Methoden zur Verwendung mit JavaScript sind: 
+```JS
+    setTimeout (Funktion, Millisekunden) 
+```
+    - Führt eine Funktion aus, nachdem eine bestimmte Anzahl von Millisekunden gewartet wurde. 
+```JS
+    setInterval (Funktion, Millisekunden) 
+```
+    - Entspricht setTimeout(), wiederholt jedoch die Ausführung der Funktion kontinuierlich. 
 
 ___
 
