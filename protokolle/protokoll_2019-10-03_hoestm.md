@@ -20,7 +20,7 @@
 	 2. [Grid-Layout](#Grid-Layout) 
 	 3. [Components](#Components)
 	 4. [Border-Utilities](#Border-Utilities)
-	 5. [Bootstrap vs NG Bootstrap](#Bootstrap vs NG Bootstrap) 
+	 5. [Bootstrap vs NG Bootstrap](#Bootstrap_vs_NG-Bootstrap) 
 	 
 
 
@@ -178,7 +178,7 @@ Genaueres zu den Border Utilities hier: [https://getbootstrap.com/docs/4.3/utili
 
 ______________
 
-### Bootstrap vs NG Bootstrap
+### Bootstrap_vs_NG-Bootstrap
 
 Both **BOOTSTRAP** and **NG BOOTSTRAP** are framework and created by Twitter . The difference is NG BOOTSTRAP uses angular thing and that makes it awesome as compare to the simple BOOTSTRAP . If you know how to use BOOTSTRAP then their will not much effort require to work on NG BOOTSTRAP . The components are almost same but NG BOOTSTRAP provide much better user interface .
 Quelle: [What is the difference between Bootstrap and ngbootstrap?]([https://www.quora.com/What-is-the-difference-between-Bootstrap-and-ngboostrap](https://www.quora.com/What-is-the-difference-between-Bootstrap-and-ngboostrap))
