@@ -1,7 +1,7 @@
 # FIVU Protokoll 5AHME
 
 
-* **Thema:** Services, Promises in JavaScript/TypeScript
+* **Thema:** Services & Promises in JavaScript/TypeScript
 * **Datum:** 07.November 2019
 * **Erstellt von:** Perl Nicolas, 5AHME, Kat.Nr. 10
 * **Abwesend:** -
@@ -28,7 +28,7 @@ In AngularJS ist ein Dienst eine Funktion oder ein Objekt, die bzw. das für Ihr
 
 Unsere Buchliste soll Daten von data.services erhalten (zentrale Klasse):  
 
-**Datei buchliste.components.ts**
+**buchliste.components.ts**
 
 ```JS
 import { Component, ComponentFactoryResolver } from '@angular/core';
@@ -65,7 +65,7 @@ export class BuchListeComponent {
 }
 ```
 
-**Datei app.modules.ts**
+**app.modules.ts**
 
 ```JS
 import { BrowserModule } from '@angular/platform-browser';
