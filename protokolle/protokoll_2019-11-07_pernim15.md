@@ -114,9 +114,8 @@ export class DataService {
     }
     public getBuchList(): Promise<Buch[]> {
         try {
-            /* eine mögliche Realisierung 
-            return new Promise<Buch []>(                                  
-                (resolved,reject) => this.getBuchListeDoInBackground() );*/ 
+            /*Eine mögliche Realisierung: 
+            return new Promise<Buch []>( (resolved,reject) => this.getBuchListeDoInBackground() );*/ 
             
             return new Promise<Buch[]>((resolve, reject) => {
                 console.log('Promise gesendet...');
@@ -132,7 +131,7 @@ export class DataService {
         } catch (err) {
             reject(err);
         }
-        /* eine weitere mögliche Realisierung
+        /*Eine weitere mögliche Realisierung:
         return new Promise<Buch []>(this.getBuchListeDoInBackground);*/
     }
 
@@ -149,3 +148,6 @@ export class DataService {
     }
 }
 ```
+
+___
+
