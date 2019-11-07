@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Book } from './data/book';
+import { DataService } from './services/data.service';
+import { reject } from 'q';
 
 @Component({
     selector: 'app-booklist',
@@ -7,11 +9,23 @@ import { Book } from './data/book';
 })
 export class BookListComponent {
 
-    private list: Book[] = [];
+    public list: Book [] = [];
+    private dataService: DataService;
 
-    public constructor () {
-        this.list.push(new Book('Mörder Ahoi', 'Agather Chrisite', 300, true));
-        this.list.push(new Book('Der Herr der Ringe', 'J.R.R. Tolkin', 600, true));
-        this.list.push(new Book('Dune', 'Typ 2', 800, true));
+    public constructor (dataService: DataService) {
+        this.dataService = dataService;
+        dataService.add(new Book('1984', 'Georg Oewell', 700, false));
+        const promise: Promise<Book []> = dataService.getBookList();
+        promise.then( (liste: Book[]) => {
+            this.list = this.list.concat(liste);
+        });
+        promise.catch( (err) => {
+            console.log('Error');
+        });
+    }
+
+    public clear () {
+        this.list = [];
+        this.dataService.clear;
     }
 }

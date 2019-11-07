@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DataService } from './services/data.service';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BookListComponent } from './bookList.component';
