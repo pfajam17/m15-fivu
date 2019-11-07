@@ -159,11 +159,12 @@ Die beiden wichtigsten Methoden zur Verwendung mit JavaScript sind:
 ```JS
     setTimeout (Funktion, Millisekunden) 
 ```
-    - Führt eine Funktion aus, nachdem eine bestimmte Anzahl von Millisekunden gewartet wurde. 
+- Führt eine Funktion aus, nachdem eine bestimmte Anzahl von Millisekunden gewartet wurde. 
+    
 ```JS
     setInterval (Funktion, Millisekunden) 
 ```
-    - Entspricht setTimeout(), wiederholt jedoch die Ausführung der Funktion kontinuierlich. 
+- Entspricht setTimeout(), wiederholt jedoch die Ausführung der Funktion kontinuierlich. 
 
 ___
 
