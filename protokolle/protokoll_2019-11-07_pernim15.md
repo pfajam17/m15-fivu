@@ -28,22 +28,40 @@ In AngularJS ist ein Dienst eine Funktion oder ein Objekt, die bzw. das für Ihr
 
 Unsere Buchliste soll Daten von data.services erhalten (zentrale Klasse):  
 
+**Datei buchliste.components.ts**
+
 ```JS
-import { Injectable } from '@angular/core';
-import { Buch } from 'src/app/data/buch';
-import { reject } from 'q';
+import { Component, ComponentFactoryResolver } from '@angular/core';
+import { Buch } from './data/buch';
+import { DataService } from './data/services/data.services';
 
-@Injectable({
-    providedIn: 'root',
+@Component({
+  selector: 'app-buchliste',
+  templateUrl: './buchliste.component.html'
 })
-export class DataService {
-    public list: Buch[] = [];
+export class BuchListeComponent {
 
-    public constructor() {
-        this.list.push(new Buch('Verurteilt', 'Rushdie', 200, false));
-        this.list.push(new Buch('Mörder Ahoi', 'Agathe Christie', 300, false));
-        this.list.push(new Buch('Die Gefährten', 'J.R.R. Tolkien,', 600, true));
-    }
+  public list: Buch[] = [];
+  private dataService: DataService;
+
+  public constructor(dataService: DataService) {
+    this.dataService = dataService;
+    dataService.add(new Buch('1984', 'George Orwell', 700, false));
+    const promise: Promise<Buch[]> = dataService.getBuchList();
+
+    dataService.getBuchList().then((liste: Buch[]) => {
+      console.log('Promise liefert Ergebnis...');
+      this.list = this.list.concat(liste);
+    });
+    promise.catch((err) => {
+      console.log('Fehler aufgetreten!');
+    });
+  }
+
+  public clear() {
+    this.list = [];
+    this.dataService.clear();
+  }
 }
 ```
 
