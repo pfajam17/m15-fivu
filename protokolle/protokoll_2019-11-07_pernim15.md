@@ -150,7 +150,7 @@ export class DataService {
             /*Eine mögliche Realisierung: 
             return new Promise<Buch []>( (resolved,reject) => this.getBuchListeDoInBackground() );*/ 
             
-            return new Promise<Buch[]>((resolve, reject) => {
+            return new Promise<Buch[]>( (resolve, reject) => {  //
                 console.log('Promise gesendet...');
                 // ...
                 // ...
@@ -161,7 +161,7 @@ export class DataService {
                     resolve(result);
                 }, 5000);
             });
-        } catch (err) {
+        } catch (err) {        //falls der Server z.B. nicht antworten kann, muss der Error abgefangen werden 
             reject(err);
         }
         /*Eine weitere mögliche Realisierung:
@@ -172,7 +172,7 @@ export class DataService {
         this.list.push(buch);
     }
 
-    public clear() {
+    public clear() {    
         throw new Error("Method not implemented");
     }
 
