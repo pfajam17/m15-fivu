@@ -53,8 +53,13 @@ ___
 
 | Java | Java Script |  
 | --------------------------------------- | -------- |   
-| Threads | nicht Multithreading fähig - soll einfacher sein | 
+| mehrere Threads - Stichwort Multithreading | nicht Multithreading fähig - soll einfacher sein | 
 |   | Lösung: Promises | 
+
+Siehe Beispiel: 'buchliste' ist erst nach einer bestimmten Zeit verfügbar 
+-> deshalb wird ein sog. Promise (Versprechen) verwendet 
+
+
 
 **buchliste.components.ts**
 
@@ -140,7 +145,7 @@ export class DataService {
         this.list.push(new Buch('Mörder Ahoi', 'Agathe Christie', 300, false));
         this.list.push(new Buch('Die Gefährten', 'J.R.R. Tolkien,', 600, true));
     }
-    public getBuchList(): Promise<Buch[]> {
+    public getBuchList(): Promise<Buch[]> {     //funktioniert wie in Java 'doInBackground()' 
         try {
             /*Eine mögliche Realisierung: 
             return new Promise<Buch []>( (resolved,reject) => this.getBuchListeDoInBackground() );*/ 
