@@ -23,3 +23,11 @@ ___
 Services sind Objekte, welche uns helfen können, Daten zwischen Komponenten auszutauschen. Getter-Methoden wären eine mögliche Lösung, wobei man bei dieser Realisierung jedoch erst das Objekt benötigen würde. 
 
 In AngularJS ist ein Dienst eine Funktion oder ein Objekt, die bzw. das für Ihre AngularJS-Anwendung verfügbar und auf diese beschränkt ist. AngularJS verfügt über ca. 30 integrierte Dienste. Wenn ein Prozess komplex wird oder sich nur schwer testen lässt, kann ein Service-Objekt hilfreich sein, um die jeweilige Codebasis zu bereinigen. Für viele Survices kann man auch Objekte verwenden, die sich bereits im DOM befinden, für eigene AngularJS-Anwendung gelten jedoch einige Einschränkungen.
+
+#### Beispiel Buchliste: 
+
+Unsere Buchliste soll Daten von data.services erhalten (zentrale Klasse):  
+
+*** JS
+int i = 1;
+***
