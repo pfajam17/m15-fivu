@@ -10,7 +10,7 @@
 
 ___
 
-## Inhaltsverzeichnis
+## Inhaltsverzeichnis 
 
 1. [Services](#Services) 
     1.[Timing Ereignisse](#Timing-Ereignisse) 
@@ -61,16 +61,16 @@ ___
 
 Das Promise-Objekt (dt./deutsch Ein Versprechens-Objekt, das später eingelöst wird) wird für asynchrone Berechnungen verwendet. Ein Promise kann sich in einem von drei Zuständen befinden: 
 
-    pending: initialer Status, weder fulfilled noch rejected. (dt. schwebend) 
-    fulfilled (erfüllt): Operation erfolgreich. 
-    rejected (zurück gewiesen): Operation gescheitert. 
+- pending: initialer Status, weder fulfilled noch rejected. (dt. schwebend) 
+- fulfilled (erfüllt): Operation erfolgreich. 
+- rejected (zurück gewiesen): Operation gescheitert. 
+
 
 #### Syntax: 
 ```JS
 new Promise(executor);
 new Promise(function(resolve, reject) { ... });
 ```
-
 
 executor (Ausführer)
     Funktion mit den zwei Argumenten resolve und reject. Das erste Argument führt den Promise aus, das zweite verwirft ihn. Die Funktionen können ausgeführt werden, sobald die Operation durchgeführt wurde. 
@@ -92,7 +92,7 @@ ___
 ```JS
 import { Component, ComponentFactoryResolver } from '@angular/core';
 import { Buch } from './data/buch';
-import { DataService } from './data/services/data.service';
+import { DataService } from './data/services/data.service';     //DataService importieren
 
 @Component({
   selector: 'app-buchliste',
@@ -109,7 +109,7 @@ export class BuchListeComponent {
     const promise: Promise<Buch[]> = dataService.getBuchList();
 
     dataService.getBuchList().then((liste: Buch[]) => {
-      console.log('Promise liefert Ergebnis...');
+      console.log('Promise liefert Ergebnis...');   //Statusausgabe an Terminal
       this.list = this.list.concat(liste);
     });
     promise.catch((err) => {
@@ -176,13 +176,13 @@ export class DataService {
             /*Eine mögliche Realisierung: 
             return new Promise<Buch []>( (resolved,reject) => this.getBuchListeDoInBackground() );*/ 
             
-            return new Promise<Buch[]>( (resolve, reject) => {  //
-                console.log('Promise gesendet...');
+            return new Promise<Buch[]>( (resolve, reject) => {
+                console.log('Promise gesendet...');             //Statusausgabe an Terminal
                 // ...
                 // ...
                 // setIntervall();
                 setTimeout(() => {
-                    console.log('Promise beendet...');
+                    console.log('Promise beendet...');          //Statusausgabe an Terminal
                     const result: Buch[] = this.list;
                     resolve(result);
                 }, 5000);
