@@ -29,5 +29,20 @@ In AngularJS ist ein Dienst eine Funktion oder ein Objekt, die bzw. das für Ihr
 Unsere Buchliste soll Daten von data.services erhalten (zentrale Klasse):  
 
 ```JS
-int i = 1;
+import { Injectable } from '@angular/core';
+import { Buch } from 'src/app/data/buch';
+import { reject } from 'q';
+
+@Injectable({
+    providedIn: 'root',
+})
+export class DataService {
+    public list: Buch[] = [];
+
+    public constructor() {
+        this.list.push(new Buch('Verurteilt', 'Rushdie', 200, false));
+        this.list.push(new Buch('Mörder Ahoi', 'Agathe Christie', 300, false));
+        this.list.push(new Buch('Die Gefährten', 'J.R.R. Tolkien,', 600, true));
+    }
+}
 ```
