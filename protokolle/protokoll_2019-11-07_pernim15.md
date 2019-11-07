@@ -13,11 +13,11 @@ ___
 ## Inhaltsverzeichnis
 
 1. [Services](#Services) 
-    [1.Timing Ereignisse](#Timing-Ereignisse)
-2. [Promises](#Promises)
-    1. [Vergleich Java mit Java Script](#Vergleich-Java-mit-Java-Script)
-    2. [Syntax](#Syntax)
-3. [Programme](#Programme)
+    1.[Timing Ereignisse](#Timing-Ereignisse) 
+2. [Promises](#Promises) 
+    1. [Vergleich Java mit Java Script](#Vergleich-Java-mit-Java-Script) 
+    2. [Syntax](#Syntax) 
+3. [Programme](#Programme) 
    
 ___
 
@@ -78,10 +78,12 @@ executor (Ausführer)
 ![](https://mdn.mozillademos.org/files/8633/promises.png) 
 
 
-[Quelle](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+[**Quelle**](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 Siehe Beispiel: 'buchliste' ist erst nach einer bestimmten Zeit verfügbar 
 -> deshalb wird ein sog. Promise (Versprechen) verwendet 
+
+___
 
 ## Programme
 
