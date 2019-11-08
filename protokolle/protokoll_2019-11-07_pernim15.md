@@ -102,14 +102,15 @@ import { DataService } from './data/services/data.service';     //DataService im
 export class BuchListeComponent {
 
   public list: Buch[] = [];
-  private dataService: DataService;
+  private dataService: DataService; //Definieren einer privaten heroService-Eigenschaft
 
-  public constructor(dataService: DataService) {
+  //Der Construktor-Parameter identifiziert sie als HeroService-Injektionsstelle.
+  public constructor(dataService: DataService) { 
     this.dataService = dataService;
-    dataService.add(new Buch('1984', 'George Orwell', 700, false));
-    const promise: Promise<Buch[]> = dataService.getBuchList();
+    dataService.add(new Buch('1984', 'George Orwell', 700, false));   //Hinzufügen eines neuen Buches
+    const promise: Promise<Buch[] >= dataService.getBuchList();
 
-    dataService.getBuchList().then((liste: Buch[]) => {
+    dataService.getBuchList().then((liste: Buch[]) => { //wenn Promise ankommt, wird then ausgeführt
       console.log('Promise liefert Ergebnis...');   //Statusausgabe an Terminal
       this.list = this.list.concat(liste);
     });
@@ -157,18 +158,23 @@ export class AppModule { }
 **data.service.ts**
 
 ```JS
-import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';  
 import { Buch } from 'src/app/data/buch';
 import { reject } from 'q';
+
+/*
+Durch Markieren einer Klasse mit @Injectable wird sichergestellt, dass der Compiler die erforderlichen Metadaten generiert, um die Abhängigkeiten der Klasse zu erstellen, wenn die Klasse injiziert wird. 
+*/
 
 @Injectable({
     providedIn: 'root',
 })
+
 export class DataService {
-    public list: Buch[] = [];
+    public list: Buch[] = []; //leere Liste
 
     public constructor() {
-        this.list.push(new Buch('Verurteilt', 'Rushdie', 200, false));
+        this.list.push(new Buch('Verurteilt', 'Rushdie', 200, false)); //Hinzufügen von Listenelementen
         this.list.push(new Buch('Mörder Ahoi', 'Agathe Christie', 300, false));
         this.list.push(new Buch('Die Gefährten', 'J.R.R. Tolkien,', 600, true));
     }
@@ -178,25 +184,25 @@ export class DataService {
             /*Eine mögliche Realisierung: 
             return new Promise<Buch []>( (resolved,reject) => this.getBuchListeDoInBackground() );*/ 
             
-            return new Promise<Buch[]>( (resolve, reject) => {
-                console.log('Promise gesendet...');             //Statusausgabe an Terminal
+            return new Promise<Buch[]>( (resolve, reject) => { //resolve und reject sind Funktionen
+                console.log('Promise gesendet...');  //Statusausgabe an Terminal
                 // ...
                 // ...
                 // setIntervall();
                 setTimeout(() => {
-                    console.log('Promise beendet...');          //Statusausgabe an Terminal
+                    console.log('Promise beendet...');  //Statusausgabe an Terminal
                     const result: Buch[] = this.list;
-                    resolve(result);
-                }, 5000);
+                    resolve(result); //asynchrone Verarbeitung wird durchgeführt-bei Bereitschaft wird resolve() aufgerufen
+                }, 5000); //wird nach 5000 Milisekunden ausgeführt
             });
-        } catch (err) {        //falls der Server z.B. nicht antworten kann, muss der Error abgefangen werden 
-            reject(err);
+        } catch (err) {  //falls der Server z.B. nicht antworten kann, muss der Error abgefangen werden 
+            reject(err); //Wenn ein Fehler bei der asynchronen Aufgabe auftritt, wird reject() aufgerufen
         }
         /*Eine weitere mögliche Realisierung:
         return new Promise<Buch []>(this.getBuchListeDoInBackground);*/
     }
 
-    public add(buch: Buch) {
+    public add(buch: Buch) { //hinzufügen eines Buches zur Liste
         this.list.push(buch);
     }
 
