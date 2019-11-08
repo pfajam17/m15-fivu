@@ -13,7 +13,7 @@ ___
 ## Inhaltsverzeichnis 
 
 1. [Services](#Services) 
-    1.[Timing Ereignisse](#Timing-Ereignisse) 
+    1. [Timing Ereignisse](#Timing-Ereignisse) 
 2. [Promises](#Promises) 
     1. [Vergleich Java mit Java Script](#Vergleich-Java-mit-Java-Script) 
     2. [Syntax](#Syntax) 
