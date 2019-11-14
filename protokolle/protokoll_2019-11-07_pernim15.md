@@ -1,7 +1,7 @@
 # FIVU Protokoll 5AHME
 
 
-* **Thema:** Services & Promises in JavaScript/TypeScript
+* **Thema:** Services & Promises in TypeScript
 * **Datum:** 07.November 2019
 * **Erstellt von:** Perl Nicolas, 5AHME, Kat.Nr. 10
 * **Abwesend:** -
@@ -15,7 +15,7 @@ ___
 1. [Services](#Services) 
     1. [Timing Ereignisse](#Timing-Ereignisse) 
 2. [Promises](#Promises) 
-    1. [Vergleich Java mit Java Script](#Vergleich-Java-mit-Java-Script) 
+    1. [Vergleich Java mit Java/Type Script](#Vergleich-Java-mit-Java-Script) 
     2. [Syntax](#Syntax) 
 3. [Programme](#Programme) 
    
@@ -52,9 +52,9 @@ ___
 
 ## Promises 
 
-### Vergleich Java mit Java Script 
+### Vergleich Java mit Java/Type Script 
 
-| Java | Java Script |  
+| Java | Java/Type Script |  
 | --------------------------------------- | -------- |   
 | mehrere Threads - Stichwort Multithreading | nicht Multithreading fähig - soll einfacher sein | 
 |   | Lösung: Promises | 
