@@ -8,18 +8,32 @@ import { resolve } from 'q';
 
 export class DataService {
 
+    public static async delay (millisecounds: number) {
+        return new Promise<void>( (res) => {
+            setTimeout( () => {
+                res();
+            }, millisecounds);
+        });
+    }
+
+    // ****************************************************************************************************************
+
     public list: Buch[] = [];
 
-    public constructor() {
+    public constructor () {
         this.list.push(new Buch('Verurteilt', 'Rushdie', 200, false));
         this.list.push(new Buch('Mörder Ahoi', 'Agathe Christie', 300, false));
         this.list.push(new Buch('Leaders eats lats', 'Simon Sanek', 500, true));
     }
 
-    public getBuchListe(): Promise<Buch[]> {
+    public async getBuchListe (): Promise<Buch []> {
+        await DataService.delay(5000);
+        return this.list;
+    }
+
+    public getBuchListeOld (): Promise<Buch[]> {
         // return new Promise<Buch []>(
         //  (resolved, reject) => this.getBuchListeDoInBackground() );
-
         // }
 
         // tslint:disable-next-line:no-shadowed-variable
@@ -44,15 +58,15 @@ export class DataService {
         // return new Promise<Buch []>( this.getBuchListeDoInBackground);
     }
 
-    public add(buch: Buch) {
+    public add (buch: Buch) {
         this.list.push(buch);
     }
 
-    clear() {
+    clear () {
         throw new Error('Method not implemented.');
     }
 
-    private getBuchListeDoInBackground() {
+    private getBuchListeDoInBackground () {
 
     }
 }

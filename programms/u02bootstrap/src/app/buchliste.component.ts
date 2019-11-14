@@ -10,7 +10,7 @@ export class BuchListeComponent {
   public list: Buch[] = [];
   private dataService: DataService;
 
-  public constructor(dataService: DataService) {
+  public constructor (dataService: DataService) {
     this.dataService = dataService;
     dataService.add(new Buch('1984', 'George Orwell', 700, false));
     const promise: Promise<Buch[]> = dataService.getBuchListe();
@@ -20,10 +20,10 @@ export class BuchListeComponent {
     });
     promise.catch((err) => {
       console.log('Fehler aufgetreten');
-    })
+    });
   }
 
-  public clear() {
+  public clear () {
     this.list = [];
     this.dataService.clear();
   }
