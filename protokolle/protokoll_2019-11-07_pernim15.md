@@ -184,7 +184,7 @@ export class DataService {
             /*Eine mögliche Realisierung: 
             return new Promise<Buch []>( (resolved,reject) => this.getBuchListeDoInBackground() );*/ 
             
-            return new Promise<Buch[]>( (resolve, reject) => { 
+            return new Promise<Buch[]>( (resolve, reject) => {      //sog. arrow-operator 
             //resolve und reject sind callback-Funktionen, welchr auf dem selben Thread laufen, Namen frei wählbar
                 console.log('Promise gesendet...');  //Statusausgabe an Terminal
                 // ...
