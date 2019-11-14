@@ -26,6 +26,6 @@ export class BookListComponent {
 
     public clear () {
         this.list = [];
-        this.dataService.clear;
+        this.dataService.clear();
     }
 }

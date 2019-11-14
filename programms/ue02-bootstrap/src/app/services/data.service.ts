@@ -1,10 +1,20 @@
 import { Injectable } from '@angular/core';
 import { Book } from '../data/book';
+import { MissingTranslationStrategy } from '@angular/compiler/src/core';
 
 @Injectable({
     providedIn: 'root',
 })
 export class DataService {
+
+    public static async delay (milliSeconds: number) {
+        return new Promise<void>( (res) => {
+            setTimeout( () => {
+                res();
+            }, milliSeconds);
+        });
+    }
+
     private list: Book[] = [];
 
     public constructor () {
@@ -13,7 +23,7 @@ export class DataService {
         this.list.push(new Book('Dune', 'Typ 2', 800, true));
     }
 
-    public getBookList (): Promise<Book[]> {
+    public getBookListOld (): Promise<Book[]> {
 
         return new Promise<Book[]>( (resolve, reject) => {
             try {
@@ -34,6 +44,11 @@ export class DataService {
 
 
         // return this.list;
+    }
+
+    public async getBookList (): Promise<Book []> {
+        await DataService.delay(5000);
+        return this.list;
     }
 
     private doInBackground () {
