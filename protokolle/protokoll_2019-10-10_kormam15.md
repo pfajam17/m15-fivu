@@ -5,7 +5,7 @@
 * **Gefehlt:** -
 * **Erstellt von:** Korrenn Marwin
 * **Protokoll 4.Einheit:** [protokoll_2019-10-03_hoestm15.md](protokoll_2019-10-03_hoestm15.md)
-* **Protokoll 6.Einheit:** [Virus](https://virus.com/)
+* **Protokoll 6.Einheit:** [protokoll_2019-10-17_ortdam14.md](https://github.com/HTLMechatronics/m15-fivu/blob/ortdam14/protokolle/protokoll_2019-10-17_ortdam.md)
 
 ----------------------------------------------------------------------------------------------
 
