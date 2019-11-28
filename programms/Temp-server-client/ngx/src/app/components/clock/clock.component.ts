@@ -1,4 +1,4 @@
-import { Component, OnInit, SystemJsNgModuleLoader } from '@angular/core';
+import { Component, OnInit, SystemJsNgModuleLoader, OnDestroy} from '@angular/core';
 import { sprintf } from 'sprintf-js';
 
 @Component({
@@ -6,14 +6,23 @@ import { sprintf } from 'sprintf-js';
   templateUrl: './clock.component.html',
   styleUrls: ['./clock.component.css']
 })
-export class ClockComponent implements OnInit {
+export class ClockComponent implements OnInit, OnDestroy {
 
   public time = '?';
+  private timerHandel: any;
 
   public constructor() { }
 
   public ngOnInit() {
     setInterval(() => this.refreshTime(), 200);
+    this.timerHandel = setInterval( () => this.refreshTime(), 200);
+  }
+
+  ngOnDestroy(): void {
+    if (this.timerHandel) {
+      clearInterval(this.timerHandel);
+    }
+    this.timerHandel = null;
   }
 
   private refreshTime() {
