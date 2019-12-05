@@ -1,20 +1,17 @@
 <table class="table">
     <thead>
         <tr>
-            <th scope="col">#</th>
-            <th scope="col">Datum</th>
-            <th scope="col">Zeit</th>
-            <th scope="col">Temperatur / °C</th>
-            <th scope="col">Feuchtigkeit / %</th>
+            <th *ngFor="let colName of COLNAMES" scope="col">{{colName}}</th>
+            
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>1.2.2001</td>
-            <td>17:99</td>
-            <td>32</td>
-            <td>33</td>
+        <tr *ngFor="let r of records">
+            <th scope="row">{{r.row}}</th>
+            <td>{{r.date}}</td>
+            <td>{{r.time}}</td>
+            <td>{{r.temp}}</td>
+            <td>{{r.humidity}}</td>
         </tr>
     </tbody>
 </table>
