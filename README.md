@@ -11,4 +11,4 @@
 1. [Protokoll 17.10.2019 (ortdam15)](https://github.com/HTLMechatronics/m15-fivu/blob/ortdam14/protokolle/protokoll_2019-10-17_ortdam.md) 
 1. [Protokoll 07.11.2019 (pernim15)](https://github.com/HTLMechatronics/m15-fivu/blob/pernim15/protokolle/protokoll_2019-11-07_pernim15.md) 
 Services & Promises in TypeScript
-1. [Protokoll 14.11.2019 (szasim15)](https://github.com/HTLMechatronics/m15-fivu/blob/szasim15/protokolle/protokoll_2019-11-14_szaszim15.md) 
+1. [Protokoll 14.11.2019 (szasim15)](https://github.com/HTLMechatronics/m15-fivu/blob/szasim15/protokolle/protokoll_2019-11-14_szaszim15.md) Threads und Arbeiten mit Promises 
