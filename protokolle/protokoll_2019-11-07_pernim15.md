@@ -6,7 +6,7 @@
 * **Erstellt von:** Perl Nicolas, 5AHME, Kat.Nr. 10
 * **Abwesend:** -
 * **Protokoll der letzten Einheit:**  [zurück](https://github.com/HTLMechatronics/m15-fivu/blob/ortdam14/protokolle/protokoll_2019-10-17_ortdam.md)
-* **Protokoll der nächsten Einheit:** [weiter]()
+* **Protokoll der nächsten Einheit:** [weiter](https://github.com/HTLMechatronics/m15-fivu/blob/szasim15/protokolle/protokoll_2019-11-14_szaszim15.md)
 
 ___
 
