@@ -92,7 +92,7 @@ Server: Daten
 Client: Daten in einer Tabelle, Titel, MinMax Anzeigen, Button Reset MinMax
 
 
-## Promise
+# Promise
 
 Das **`Promise-Objekt (dt./deutsch Ein Versprechens-Objekt, das später eingelöst wird)`** wird für asynchrone Berechnungen verwendet. Ein `Promise` kann sich in einem von drei Zuständen befinden:
 
@@ -133,7 +133,7 @@ private  delayMs(ms:  number) {
 // new <T>(executor: (resolve: (value?:  T  |  PromiseLike<T>)
 // =>  void, reject: (reason?:  any) =>  void) =>  void):  Promise<T>;
 ```
-## Tabelle
+# Tabelle
 
 ### Striped rows
 
@@ -169,7 +169,7 @@ Use `.table-striped` to add zebra-striping to any table row within the `<tbody>`
 </tbody>
 </table>
 ```
-## Button
+# Button
 
 Verschiedenste Arten von Button auf:
 
@@ -185,7 +185,7 @@ Verschiedenste Arten von Button auf:
 Zurücksetzen
 </button>
 ```
-## Temperaturwert
+# Temperaturwert
 Für den Minimal- und den Maximaltemperaturwert werden Anzeigefelder benötigt. Dies wurde folgendemaßen ausprogrammiert:
 
 ### Anwendung
@@ -202,7 +202,7 @@ Für den Minimal- und den Maximaltemperaturwert werden Anzeigefelder benötigt. 
 </div>
 ```
 
-## Clock 
+# Clock 
 
 ### Intervall
 We may decide to execute a function not right now, but at a certain time later. That’s called “scheduling a call”.
@@ -241,7 +241,7 @@ private  refreshTime() {
 ```
 
 
-## Theorie
+# Theorie
 
 
 ### Architecture Overview
