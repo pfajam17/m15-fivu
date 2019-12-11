@@ -4,7 +4,7 @@
 -   **Protokoll letzte Einheit:** Simon Szapacs
 -   **Protokoll nächste Einheit:** Thomas Winter
 
-1. [Bootstrap Installation](https://github.com/HTLMechatronics/m15-fivu/blob/vezsam15/protokolle/protokoll_2019-11-21_vezsam15.md)  
+1. [Bootstrap Installation](https://github.com/HTLMechatronics/m15-fivu/blob/vezsam15/protokolle/protokoll_2019-11-21_vezsam15.md ## Bootstrap)  
 2. [Server - Client - Programm]()  
    2.1. [Promise]()  
    2.2. [Striped rows]()   
