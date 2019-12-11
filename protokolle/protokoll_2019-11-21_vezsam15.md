@@ -12,7 +12,7 @@
 1. [Bootstrap Installation]()
 2. [Server - Client - Programm]()  
    2.1. [Promise]()  
-   2.2. [Striped rows]()   
+   2.2. [Striped rows](https://github.com/HTLMechatronics/m15-fivu/blob/vezsam15/protokolle/protokoll_2019-11-21_vezsam15.md#tabelle)   
    2.3. [Button](https://github.com/HTLMechatronics/m15-fivu/blob/vezsam15/protokolle/protokoll_2019-11-21_vezsam15.md#button)     
    2.4. [Temperaturwert](https://github.com/HTLMechatronics/m15-fivu/blob/vezsam15/protokolle/protokoll_2019-11-21_vezsam15.md#temperaturwert)   
    2.5. [Clock](https://github.com/HTLMechatronics/m15-fivu/blob/vezsam15/protokolle/protokoll_2019-11-21_vezsam15.md#clock) 
