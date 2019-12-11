@@ -4,7 +4,7 @@
 -   **Protokoll letzte Einheit:** Simon Szapacs
 -   **Protokoll nächste Einheit:** Thomas Winter
 
-1. [Bootstrap Installation](https://github.com/HTLMechatronics/m15-fivu/blob/vezsam15/protokolle/protokoll_2019-11-21_vezsam15.md ## Bootstrap)  
+1. [Bootstrap Installation]()
 2. [Server - Client - Programm]()  
    2.1. [Promise]()  
    2.2. [Striped rows]()   
@@ -18,7 +18,7 @@
      3.4. [await]()  
      3.5. [submit]()  
 
-## Bootstrap
+# Bootstrap
 
 Um ständige Wartezeiten am Anfang der Stunden zu vermeiden, anbei nochmals die Anleitung zur Bootstrap Installation: 
 
