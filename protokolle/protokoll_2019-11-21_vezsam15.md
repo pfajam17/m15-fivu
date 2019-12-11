@@ -3,7 +3,8 @@
 -   **Thema:** Bootstrap Installation, Server Client Programm
 -   **Datum:** 21.11.2019 + 29.11.2019
 -   **Erstellt von:** Sarah Vezonik
--   **Protokoll letzte Einheit:** Simon Szapacs
+-   **Protokoll letzte Einheit:** 
+[Simon Szapacs](https://github.com/HTLMechatronics/m15-fivu/blob/szasim15/protokolle/protokoll_2019-11-14_szaszim15.md)
 -   **Protokoll nächste Einheit:** Thomas Winter
 
 # Inhaltsverzeichnis 
