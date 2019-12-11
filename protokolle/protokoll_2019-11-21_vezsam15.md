@@ -14,7 +14,7 @@
    2.1. [Promise]()  
    2.2. [Striped rows]()   
    2.3. [Button]()     
-   2.4. [Temperaturwert]()   
+   2.4. [Temperaturwert](https://github.com/HTLMechatronics/m15-fivu/blob/vezsam15/protokolle/protokoll_2019-11-21_vezsam15.md#temperaturwert)   
    2.5. [Clock](https://github.com/HTLMechatronics/m15-fivu/blob/vezsam15/protokolle/protokoll_2019-11-21_vezsam15.md#clock) 
 3. [Theorie](https://github.com/HTLMechatronics/m15-fivu/blob/vezsam15/protokolle/protokoll_2019-11-21_vezsam15.md#theorie)  
      3.1. [Architecture Overview](https://github.com/HTLMechatronics/m15-fivu/blob/vezsam15/protokolle/protokoll_2019-11-21_vezsam15.md#architecture-overview)  
