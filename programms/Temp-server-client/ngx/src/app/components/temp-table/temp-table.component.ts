@@ -30,18 +30,22 @@ export class TempTableComponent implements OnInit {
     this.dataService.addDataListener({
       push: (r) => this.pushData(r),
       remove: null,
-      clear: null
+      clear: ( ) => this.clearData()
     });
 
-    this.records.push({row: 1, date: '2019 12 05', time: '10:05:02', temp: '23.5', humidity: '45'});
-    this.records.push({row: 2, date: '2019 12 05', time: '11:05:02', temp: '24.2', humidity: '35'});
+    this.records.push({ row: 1, date: '12.12.2019', time: '10:05:02', temp: '23.5', humidity: '45'});
+    this.records.push({ row: 2, date: '12.12.2019', time: '11:05:02', temp: '24.2', humidity: '35'});
+  }
+
+  private clearData() {
+    this.records = [];
   }
 
   private pushData(r: IDataRecord) {
     const rt: ITableRecord = {
       row: this.records.length + 1,
-      data: r.time.toLocaleDateString,
-      time: r.time.toLocaleTimeString,
+      date: r.time.toLocaleDateString(),
+      time: r.time.toLocaleTimeString(),
       temp: '' + r.temp,
       humidity: '' + r.humidity
     };
