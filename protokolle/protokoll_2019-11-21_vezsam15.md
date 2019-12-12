@@ -93,8 +93,10 @@ Anbei noch die Homepage für die genau Anleitung um den Bootstrap auch offline a
 # Server - Client - Programm
 Unsere Aufgabe ist es, ein neues Programm, welches zum einen die Messdaten über ein Promise und die Uhrzeit in einem Interval erfasst, zu programmieren.
 In der ersten und zweiten Einheit beschäftigten wir uns mit der Uhrzeit und einer Tabelle mit den Messwerten.
-Server: Daten
-Client: Daten in einer Tabelle, Titel, MinMax Anzeigen, Button Reset MinMax
+Server: Daten  
+
+Client: Daten in einer Tabelle, Titel, MinMax Anzeigen, Button Reset MinMax  
+
 
 
 # Promise
@@ -210,14 +212,16 @@ Für den Minimal- und den Maximaltemperaturwert werden Anzeigefelder benötigt. 
 # Clock 
 
 ### Intervall
-We may decide to execute a function not right now, but at a certain time later. That’s called “scheduling a call”.
 
-There are two methods for it:
+Wir können uns entscheiden, eine Funktion nicht sofort, sondern zu einem bestimmten Zeitpunkt später auszuführen. Dies wird als "Planen eines Anrufs" bezeichnet.
 
--   `setTimeout` allows us to run a function once after the interval of time.
--   `setInterval` allows us to run a function repeatedly, starting after the interval of time, then repeating continuously at that interval.
+Es gibt zwei Methoden dafür:
 
-These methods are not a part of JavaScript specification. But most environments have the internal scheduler and provide these methods. In particular, they are supported in all browsers and Node.js.
+- `setTimeout` erlaubt uns, eine Funktion einmal nach dem Zeitintervall auszuführen.
+- `setInterval` ermöglicht es uns, eine Funktion wiederholt auszuführen, beginnend nach dem Zeitintervall, und dann kontinuierlich in diesem Intervall zu wiederholen.
+
+Diese Methoden sind nicht Teil der JavaScript-Spezifikation. Die meisten Umgebungen verfügen jedoch über den internen Scheduler und bieten diese Methoden an. Insbesondere werden sie in allen Browsern und in Node.js unterstützt.  
+
 
 ### Anwendung
 ```typescript
