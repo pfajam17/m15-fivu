@@ -92,7 +92,8 @@ Anbei noch die Homepage für die genau Anleitung um den Bootstrap auch offline a
 
 # Server - Client - Programm
 Unsere Aufgabe ist es, ein neues Programm, welches zum einen die Messdaten über ein Promise und die Uhrzeit in einem Interval erfasst, zu programmieren.
-In der ersten und zweiten Einheit beschäftigten wir uns mit der Uhrzeit und einer Tabelle mit den Messwerten.
+In der ersten und zweiten Einheit beschäftigten wir uns mit der Uhrzeit und einer Tabelle mit den Messwerten.  
+
 Server: Daten  
 
 Client: Daten in einer Tabelle, Titel, MinMax Anzeigen, Button Reset MinMax  
