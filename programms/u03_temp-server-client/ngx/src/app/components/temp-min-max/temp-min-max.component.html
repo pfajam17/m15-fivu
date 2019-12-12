@@ -1,0 +1,17 @@
+<form>
+    <div class="form-group">
+        <label for="exampleInputMin">Minimalwert</label>
+        <input type="text" class="form-control" id="inputMin" value="{{tempMin}}" readonly>
+        <small id="minHelp" class="form-text text-muted">Kleinster Temperaturwert</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputMin">Maximalwert</label>
+        <input type="text" class="form-control" id="inputMax" value="{{tempMax}}" readonly>
+        <small id="maxHelp" class="form-text text-muted">Größter Temperaturwert</small>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="onClick()" [disabled]="isBusy">
+        <span *ngIf="isBusy" class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+        <span class="sr-only">Loading...</span>
+        zurücksetzen
+    </button>
+  </form>
