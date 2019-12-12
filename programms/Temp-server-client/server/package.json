@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "Temperature/Humidity Server",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/typescript/bin/tsc ",
+    "start": "node taget/main.js"
+  },
+  "author": "Breitenthaler",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.7.3"
+  }
+}
