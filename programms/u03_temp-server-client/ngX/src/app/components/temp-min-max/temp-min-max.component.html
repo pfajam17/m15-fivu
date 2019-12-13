@@ -1,0 +1,23 @@
+
+    <form>
+        <div class="form-group">
+            <label for="exampleInputMin">Minimalwert</label>
+            <input type="text" class="form-control" id="InputMin" value="{{tempMin}}" readonly>
+            <small id="minHelp" class="form-text text-muted">Kleinster Temperaturwert</small>
+        </div>
+        <div class="form-group">
+                <label for="exampleInputMax">Maximalwert</label>
+                <input type="text" class="form-control" id="InputMax" value="{{tempMax}}" readonly>
+                <small id="maxHelp" class="form-text text-muted">Größter Temperaturwert</small>
+            </div>
+        <!-- <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        -->
+            <button type="button" class="btn btn-primary" (click)="OnClick()" [disabled]="isBusy">
+                <span *ngIf="isBusy" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                <span class="sr-only">Loading...</span>
+                Zurücksetzen
+            </button>
+    </form>

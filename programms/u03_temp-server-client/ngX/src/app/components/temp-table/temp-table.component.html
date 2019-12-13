@@ -1,0 +1,17 @@
+<table class="table">
+  <thead>
+      <tr>
+          <th *ngFor="let colName of COLNAMES" scope="col">{{colName}}</th>
+          
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let r of records">
+          <th scope="row">{{r.row}}</th>
+          <td>{{r.date}}</td>
+          <td>{{r.time}}</td>
+          <td>{{r.temp}}</td>
+          <td>{{r.humidity}}</td>
+      </tr>
+  </tbody>
+</table>
